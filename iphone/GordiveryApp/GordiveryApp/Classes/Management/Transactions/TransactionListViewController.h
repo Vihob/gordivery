@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebViewBaseViewController.h"
 
-@interface TransactionListViewController : UIViewController
+@interface TransactionListViewController : WebViewBaseViewController
 
 @end

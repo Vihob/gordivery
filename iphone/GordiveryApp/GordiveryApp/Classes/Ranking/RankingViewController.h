@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebViewBaseViewController.h"
 
-@interface RankingViewController : UIViewController
+@interface RankingViewController : WebViewBaseViewController<UIWebViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIWebView *webview;
 
 @end

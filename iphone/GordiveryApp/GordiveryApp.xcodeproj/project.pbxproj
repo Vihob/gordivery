@@ -28,6 +28,11 @@
 		E601847F163AEA6800B2869C /* CategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601847E163AEA6800B2869C /* CategoryListViewController.m */; };
 		E6018482163AEA7C00B2869C /* TransactionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018481163AEA7C00B2869C /* TransactionListViewController.m */; };
 		E6018485163AEA9200B2869C /* TransactionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018484163AEA9200B2869C /* TransactionDetailViewController.m */; };
+		E601848D163AF37A00B2869C /* WebViewBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601848C163AF37A00B2869C /* WebViewBaseViewController.m */; };
+		E6018494163AF49B00B2869C /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018490163AF49B00B2869C /* LoadingViewController.m */; };
+		E6018495163AF49B00B2869C /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6018491163AF49B00B2869C /* LoadingViewController.xib */; };
+		E6018496163AF49B00B2869C /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018493163AF49B00B2869C /* Utils.m */; };
+		E6018498163B141100B2869C /* html5 in Resources */ = {isa = PBXBuildFile; fileRef = E6018497163B140E00B2869C /* html5 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +72,14 @@
 		E6018481163AEA7C00B2869C /* TransactionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionListViewController.m; sourceTree = "<group>"; };
 		E6018483163AEA9200B2869C /* TransactionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionDetailViewController.h; sourceTree = "<group>"; };
 		E6018484163AEA9200B2869C /* TransactionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionDetailViewController.m; sourceTree = "<group>"; };
+		E601848B163AF37A00B2869C /* WebViewBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewBaseViewController.h; sourceTree = "<group>"; };
+		E601848C163AF37A00B2869C /* WebViewBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewBaseViewController.m; sourceTree = "<group>"; };
+		E601848F163AF49B00B2869C /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		E6018490163AF49B00B2869C /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		E6018491163AF49B00B2869C /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		E6018492163AF49B00B2869C /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		E6018493163AF49B00B2869C /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		E6018497163B140E00B2869C /* html5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html5; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +126,9 @@
 		E6018429163AE0F400B2869C /* GordiveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				E601848E163AF49A00B2869C /* Utils */,
+				E601848A163AF37900B2869C /* Manager */,
+				E6018497163B140E00B2869C /* html5 */,
 				E601845A163AE94C00B2869C /* Classes */,
 				E6018432163AE0F400B2869C /* AppDelegate.h */,
 				E6018433163AE0F400B2869C /* AppDelegate.m */,
@@ -245,6 +261,27 @@
 			path = Ranking;
 			sourceTree = "<group>";
 		};
+		E601848A163AF37900B2869C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E601848B163AF37A00B2869C /* WebViewBaseViewController.h */,
+				E601848C163AF37A00B2869C /* WebViewBaseViewController.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E601848E163AF49A00B2869C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E601848F163AF49B00B2869C /* LoadingViewController.h */,
+				E6018490163AF49B00B2869C /* LoadingViewController.m */,
+				E6018491163AF49B00B2869C /* LoadingViewController.xib */,
+				E6018492163AF49B00B2869C /* Utils.h */,
+				E6018493163AF49B00B2869C /* Utils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,6 +337,8 @@
 				E6018438163AE0F400B2869C /* Default@2x.png in Resources */,
 				E601843A163AE0F400B2869C /* Default-568h@2x.png in Resources */,
 				E601843D163AE0F400B2869C /* MainStoryboard.storyboard in Resources */,
+				E6018495163AF49B00B2869C /* LoadingViewController.xib in Resources */,
+				E6018498163B141100B2869C /* html5 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +362,9 @@
 				E601847F163AEA6800B2869C /* CategoryListViewController.m in Sources */,
 				E6018482163AEA7C00B2869C /* TransactionListViewController.m in Sources */,
 				E6018485163AEA9200B2869C /* TransactionDetailViewController.m in Sources */,
+				E601848D163AF37A00B2869C /* WebViewBaseViewController.m in Sources */,
+				E6018494163AF49B00B2869C /* LoadingViewController.m in Sources */,
+				E6018496163AF49B00B2869C /* Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

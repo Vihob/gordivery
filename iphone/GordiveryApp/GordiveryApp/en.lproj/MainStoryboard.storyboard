@@ -44,10 +44,25 @@
                     <view key="view" contentMode="scaleToFill" id="saA-nN-I7c">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8A-7b-IJn">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="D7D-Te-uRp" id="zlS-VD-Fv1"/>
+                                </connections>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v8A-7b-IJn" firstAttribute="leading" secondItem="saA-nN-I7c" secondAttribute="leading" type="default" id="JHj-M0-NCp"/>
+                            <constraint firstItem="v8A-7b-IJn" firstAttribute="trailing" secondItem="saA-nN-I7c" secondAttribute="trailing" type="default" id="XNi-lU-Uqm"/>
+                            <constraint firstItem="v8A-7b-IJn" firstAttribute="top" secondItem="saA-nN-I7c" secondAttribute="top" type="default" id="gqo-D0-HN7"/>
+                            <constraint firstItem="v8A-7b-IJn" firstAttribute="bottom" secondItem="saA-nN-I7c" secondAttribute="bottom" type="default" id="vK9-Sq-TRl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Eg-J7-hwn"/>
                     <connections>
+                        <outlet property="webview" destination="v8A-7b-IJn" id="Cu1-5b-wLO"/>
                         <segue destination="IVQ-OW-bvD" kind="push" id="VwB-Zc-GKL"/>
                         <segue destination="B57-fs-UUE" kind="push" id="kgp-Lc-SzE"/>
                     </connections>
@@ -99,10 +114,25 @@
                     <view key="view" contentMode="scaleToFill" id="duX-5W-mO8">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kp2-SK-OYG">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gHO-Nc-1ge" id="Oco-mi-0sV"/>
+                                </connections>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kp2-SK-OYG" firstAttribute="trailing" secondItem="duX-5W-mO8" secondAttribute="trailing" type="default" id="a9k-xX-oAA"/>
+                            <constraint firstItem="Kp2-SK-OYG" firstAttribute="bottom" secondItem="duX-5W-mO8" secondAttribute="bottom" type="default" id="eDd-p9-xGA"/>
+                            <constraint firstItem="Kp2-SK-OYG" firstAttribute="leading" secondItem="duX-5W-mO8" secondAttribute="leading" type="default" id="xu4-Nt-6ud"/>
+                            <constraint firstItem="Kp2-SK-OYG" firstAttribute="top" secondItem="duX-5W-mO8" secondAttribute="top" type="default" id="yCU-Be-EBP"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rDz-5w-m7q"/>
                     <connections>
+                        <outlet property="webview" destination="Kp2-SK-OYG" id="8IJ-Zh-l6k"/>
                         <segue destination="y5w-XY-k2i" kind="push" id="fsq-3h-JFX"/>
                     </connections>
                 </viewController>
@@ -132,9 +162,26 @@
                     <view key="view" contentMode="scaleToFill" id="wfq-2n-WyC">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKb-Wf-dWr">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="eKE-Ar-wXW" id="EBY-ah-tVU"/>
+                                </connections>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VKb-Wf-dWr" firstAttribute="top" secondItem="wfq-2n-WyC" secondAttribute="top" type="default" id="4Z6-eu-86V"/>
+                            <constraint firstItem="VKb-Wf-dWr" firstAttribute="bottom" secondItem="wfq-2n-WyC" secondAttribute="bottom" type="default" id="N2t-cN-qMk"/>
+                            <constraint firstItem="VKb-Wf-dWr" firstAttribute="trailing" secondItem="wfq-2n-WyC" secondAttribute="trailing" type="default" id="f0t-Fc-eGx"/>
+                            <constraint firstItem="VKb-Wf-dWr" firstAttribute="leading" secondItem="wfq-2n-WyC" secondAttribute="leading" type="default" id="pxh-NM-3jZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gbL-Xh-uAB"/>
+                    <connections>
+                        <outlet property="webview" destination="VKb-Wf-dWr" id="G3b-qz-56w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zw1-g3-Tqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,10 +194,25 @@
                     <view key="view" contentMode="scaleToFill" id="6fN-CR-vwe">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9P-Us-GsN">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="AOt-O0-Grq" id="Hce-Wh-8M7"/>
+                                </connections>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N9P-Us-GsN" firstAttribute="top" secondItem="6fN-CR-vwe" secondAttribute="top" type="default" id="6xq-Cj-lVg"/>
+                            <constraint firstItem="N9P-Us-GsN" firstAttribute="trailing" secondItem="6fN-CR-vwe" secondAttribute="trailing" type="default" id="R2e-l3-3Iv"/>
+                            <constraint firstItem="N9P-Us-GsN" firstAttribute="bottom" secondItem="6fN-CR-vwe" secondAttribute="bottom" type="default" id="o6C-mW-3a2"/>
+                            <constraint firstItem="N9P-Us-GsN" firstAttribute="leading" secondItem="6fN-CR-vwe" secondAttribute="leading" type="default" id="spr-9N-QmR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="x8B-81-ydS"/>
                     <connections>
+                        <outlet property="webview" destination="N9P-Us-GsN" id="7ch-M5-Ncd"/>
                         <segue destination="RQl-sR-vM4" kind="push" id="DK5-Et-ayS"/>
                     </connections>
                 </viewController>
@@ -308,38 +370,56 @@
         </scene>
     </scenes>
     <classes>
-        <class className="CategoryListViewController" superclassName="UIViewController">
+        <class className="CategoryListViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CategoryListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
         </class>
-        <class className="ComercDetailViewController" superclassName="UIViewController">
+        <class className="ComercDetailViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ComercDetailViewController.h"/>
         </class>
-        <class className="ComercListViewController" superclassName="UIViewController">
+        <class className="ComercListViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ComercListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
         </class>
-        <class className="ComercMapViewController" superclassName="UIViewController">
+        <class className="ComercMapViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ComercMapViewController.h"/>
         </class>
-        <class className="CreditCardSelectorViewController" superclassName="UIViewController">
+        <class className="CreditCardSelectorViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CreditCardSelectorViewController.h"/>
         </class>
-        <class className="ProfileViewController" superclassName="UIViewController">
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ProfileViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
         </class>
-        <class className="RankingViewController" superclassName="UIViewController">
+        <class className="RankingViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RankingViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
         </class>
-        <class className="TransactionCompleteViewController" superclassName="UIViewController">
+        <class className="TransactionCompleteViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionCompleteViewController.h"/>
         </class>
-        <class className="TransactionDetailViewController" superclassName="UIViewController">
+        <class className="TransactionDetailViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionDetailViewController.h"/>
         </class>
-        <class className="TransactionListViewController" superclassName="UIViewController">
+        <class className="TransactionListViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionListViewController.h"/>
         </class>
-        <class className="TransactionViewController" superclassName="UIViewController">
+        <class className="TransactionViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionViewController.h"/>
+        </class>
+        <class className="WebViewBaseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewBaseViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

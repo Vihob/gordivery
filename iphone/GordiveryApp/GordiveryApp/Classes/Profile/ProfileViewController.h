@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebViewBaseViewController.h"
 
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : WebViewBaseViewController<UIWebViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIWebView *webview;
+
+
 
 @end

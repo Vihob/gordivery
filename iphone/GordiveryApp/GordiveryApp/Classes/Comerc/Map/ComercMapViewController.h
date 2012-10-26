@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebViewBaseViewController.h"
 
-@interface ComercMapViewController : UIViewController
+@interface ComercMapViewController : WebViewBaseViewController
 
 @end
