@@ -17,7 +17,7 @@ html {
 body { 
 	margin: 0;
 	padding: 0;
-	background: #fff;
+	background: #ededed;
 	height: 100%;
 } 
 
@@ -179,7 +179,7 @@ COMERC DETAIL
 	height: 150px;
 	position: relative;
 	background: black;
-	position: fixed;
+	position: absolute;
 	z-index: 1;
 	opacity: .4;
 } 
@@ -223,24 +223,99 @@ COMERC DETAIL
 } 
 
 .detail_location { 
-
-
-} 
-
-.detail_location_map { 
-
-
+	width: 85%;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 25px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+	
 } 
 
 .detail_location_adress { 
+	width: 100%;
+	height: 45px;
+	padding-top: 12px;
+	text-align: center;
+	color: #333;
+	border-bottom: 1px solid #ccc;
+	background-image: -webkit-linear-gradient(top, rgb(250,250,250), rgb(230,230,230));
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
 
-
+.detail_location_map { 
+	width: 100%;
+	height: 150px;
+	background: #fff;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 } 
+ 
 
 .link_comerc_btn { 
-
-
+	width: 80%;
+	height: 50px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 35px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 0 -1px 1px rgba(0,0,0,.5);
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid rgba(1, 3, 50, .45);
+	border-radius: 5;
+	background-image: -webkit-linear-gradient(top, rgb(78,163,251), rgb(3,97,153));
+	box-shadow: 0px 2px 1px #fff;
 } 
+
+
+.detail_points{
+	width: 85%;
+	height: auto;
+	min-height: 70px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+
+
+.points_euro{
+	width: 35%;
+	height: auto;
+	position: absolute;
+	left: 10%;	
+	text-align: center;
+}
+
+.points_total{
+	width: 35%;
+	height: auto;
+	position: absolute;
+	right: 10%;	
+	text-align: center;
+}
+
+.points_label{
+	font-size: 16px;
+	font-weight: bold;
+	color: #888;
+	margin-bottom: 3px;
+	text-shadow: 0 2px 1px rgba(255,255,255,1);
+}
+
+.points_num{
+	font-size: 30px;
+	font-weight: bold;
+	color: #888;
+	margin-bottom: 8px;
+	text-shadow: 0 2px 1px rgba(255,255,255,1);
+}
+
 
 /*******************************************************************
 MANAGEMENT

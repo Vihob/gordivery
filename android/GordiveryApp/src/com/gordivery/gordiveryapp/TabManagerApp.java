@@ -42,9 +42,9 @@ public class TabManagerApp extends FragmentActivity {
 
 		mTabManager.addTab(createSecondTab(), ManagementFragment.class, null);
 
-		mTabManager.addTab(createThirdTab(), ProfileFragment.class, null);
+		mTabManager.addTab(createThirdTab(), RankingFragment.class, null);
 
-		mTabManager.addTab(createFourthTab(), RankingFragment.class, null);
+		mTabManager.addTab(createFourthTab(), ProfileFragment.class, null);
 
 		if (savedInstanceState != null) {
 			mTabHost.setCurrentTabByTag(savedInstanceState.getString("tab"));
@@ -113,7 +113,7 @@ public class TabManagerApp extends FragmentActivity {
 	}
 
 	private TabSpec createThirdTab() {
-		String tabText = getString(R.string.tab_profile);
+		String tabText = getString(R.string.tab_ranking);
 		View tabIndicator = LayoutInflater.from(this).inflate(
 				R.layout.tabmanagercontent, null);
 		tabIndicator.setBackgroundResource(R.drawable.tab_contacts_style);
@@ -123,7 +123,7 @@ public class TabManagerApp extends FragmentActivity {
 	}
 
 	private TabSpec createFourthTab() {
-		String tabText = getString(R.string.tab_ranking);
+		String tabText = getString(R.string.tab_profile);
 		View tabIndicator = LayoutInflater.from(this).inflate(
 				R.layout.tabmanagercontent, null);
 		tabIndicator.setBackgroundResource(R.drawable.tab_disclaimer_style);
