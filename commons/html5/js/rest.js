@@ -14,6 +14,7 @@ Dependencies:
 
 	// Application URLS
 	var kGetCommerces = kBaseAPIURL+"operations/commerce/search/near?lat=41.402391&lng=2.194765&radius=0.5";
+	var kDoLogin = kBaseAPIURL+"/access/login";
 
 
 	var k_TimeOut = 10;
@@ -75,28 +76,20 @@ Dependencies:
 		doLogin: function(success, error, anUser, aPassword){
 
 			//get base login URL
-			var url = kLogin;
+			var url = kDoLogin;
 
-			//add get parameters login req
-			url = url + kLoginUsernameParam + anUser + kLoginPasswordParam + aPassword;
-
-			//Don't needed. Its impossible to get accesToken with fake JSON.
-			if(dropboxJsons)
-				url = "http://dl.dropbox.com/u/89277349/lineaCaminos/login.xml";
+			var Authorization = $.base64.encode( anUser+aPassword );
 
 			// Try to open and parse a XML document
 			$.ajax({
-        		type: "GET",
-        		url: url,
-       			dataType: "xml",
-        		success: parseXML,
-        		error: error
-      		});
-
-      		function parseXML(xml){
-      			var login = DAO.parseLogin(xml);      			
-      			success( login, 200 );
-      		}
+	            url : url,
+	            dataType : 'json',
+	            beforeSend : function(xhr){
+	                xhr.setRequestHeader('Authorization',Authorization);
+	            },
+	            success : success,
+	            error : error
+        	});
 		},
 		
 		/**
