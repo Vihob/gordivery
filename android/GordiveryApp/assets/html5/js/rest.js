@@ -13,9 +13,9 @@ Dependencies:
 	var kBaseAPIURL = "http://finappsapi.bdigital.org/api/2012/5108b053ed/";
 
 	// Application URLS
-	var kGetCommerces = kBaseAPIURL+"operations/commerce/search/near?lat=41.402391&lng=2.194765&radius=0.5";
 	var kDoLogin = kBaseAPIURL+"/access/login";
-
+	var kGetCommerces = "operations/commerce/search/near";
+	var kGetCommerceDetail = "operations/commerce/";
 
 	var k_TimeOut = 10;
 	var k_LongTimeOut = 25;
@@ -34,43 +34,40 @@ Dependencies:
 
 		getComerces : function(lat,lon, success, error){
 
-			var accessToken = localStorage.getItem( k_ACCESS_TOKEN_KEY );
-			if(!dropboxJsons && !utils.isNotEmptyLocalStorageStringKey(accessToken)){
-				error();
-				return;
-			}
-			
-			var url = kGetMovement;
-			var data = DAO.getMovementDetailPushData(accessToken,movementId);
-			var type = 'POST';
-			
-			console.log("Get Movements data: "+data);
-			
-			if(dropboxJsons){
-				url = "https://dl.dropbox.com/u/89277349/caminosOnTime/detalle_movimiento.xml";
-				data = '';
-				type = 'GET';
-			}
+			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
+			accesToken = "608-b0cc-ac39ede03a74";
+			var url = kBaseAPIURL + accesToken+"/"+kGetCommerces+"?lat="+lat+"&lng="+lon+"&radius=0.5";
+			var type = 'GET';
 			
 			// Your code here
 	        $.ajax({
 	            //this is a 'cross-origin' domain
 	            url : url,
 	            type : type,
-	            data : data,
-	            contentType: 'text/xml',
-				dataType : 'xml',
-	            success : parseXML,
+	            contentType: 'application-json',
+				dataType : 'json',
+	            success : success,
 	            error : error
 	        });
-	        
-	        function parseXML(xml){
-      			var movement = new Object();
+		},
+		
+		getComerceDetail : function(idComerce, success, error){
 
-      			movement = DAO.parseMovement($(xml).find("DETALLE_MOVIMIENTO"));
-
-      			success( movement, 200 );
-	        }
+			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
+			accesToken = "608-b0cc-ac39ede03a74";
+			var url = kBaseAPIURL + accesToken+"/"+kGetCommerceDetail+idComerce;
+			var type = 'GET';
+			
+			// Your code here
+	        $.ajax({
+	            //this is a 'cross-origin' domain
+	            url : url,
+	            type : type,
+	            contentType: 'application-json',
+				dataType : 'json',
+	            success : success,
+	            error : error
+	        });
 		},
 		
 		doLogin: function(success, error, anUser, aPassword){
