@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebViewBaseViewController.h"
 
-@interface CategoryListViewController : UIViewController
+@interface CategoryListViewController : WebViewBaseViewController
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebViewBaseViewController.h"
 
-@interface RankingViewController : UIViewController
+@interface RankingViewController : WebViewBaseViewController
 
 @end

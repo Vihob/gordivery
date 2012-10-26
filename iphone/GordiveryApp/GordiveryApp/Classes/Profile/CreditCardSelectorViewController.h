@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebViewBaseViewController.h"
 
-@interface CreditCardSelectorViewController : UIViewController
+@interface CreditCardSelectorViewController : WebViewBaseViewController
 
 @end

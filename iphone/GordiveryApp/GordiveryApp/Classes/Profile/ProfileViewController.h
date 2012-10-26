@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebViewBaseViewController.h"
 
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : WebViewBaseViewController
 
 @end
