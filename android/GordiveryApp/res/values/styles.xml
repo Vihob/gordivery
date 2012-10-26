@@ -2,10 +2,10 @@
 
     <style name="AppTheme" parent="android:Theme.Light" />
     
-    <style name="tab_text_style">
+      <style name="tab_text_style">
 	    <item name="android:paddingTop">38dp</item>
 	    <item name="android:textColor">#FFFFFF</item>
 	    <item name="android:textSize">10sp</item>
-  	</style>
+  </style>
 
 </resources>

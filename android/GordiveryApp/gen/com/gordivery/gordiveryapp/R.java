@@ -71,33 +71,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int comun_btn_telefono_android=0x7f020014;
         public static final int comun_icon_actions_android=0x7f020015;
         public static final int comun_icon_fax_android=0x7f020016;
-        public static final int ic_action_search=0x7f020017;
-        public static final int ic_home=0x7f020018;
-        public static final int ic_launcher=0x7f020019;
-        public static final int icon=0x7f02001a;
-        public static final int next_button_style=0x7f02001b;
-        public static final int oficinas_line_android=0x7f02001c;
-        public static final int oficinas_marco_mapa_android=0x7f02001d;
-        public static final int oficinas_page_control=0x7f02001e;
-        public static final int oficinas_page_control_=0x7f02001f;
-        public static final int oficinas_poid_mapa_android=0x7f020020;
-        public static final int operativa_box_login_android=0x7f020021;
-        public static final int operativa_btn_aceptar_android=0x7f020022;
-        public static final int operativa_logo_android=0x7f020023;
-        public static final int pager_indicator_style=0x7f020024;
-        public static final int splash=0x7f020025;
-        public static final int tab_background_style=0x7f020026;
-        public static final int tab_banking_operations_style=0x7f020027;
-        public static final int tab_contacts_style=0x7f020028;
-        public static final int tab_disclaimer_style=0x7f020029;
-        public static final int tab_offices_style=0x7f02002a;
-        public static final int tab_public_web_style=0x7f02002b;
-        public static final int web_btn_refresh=0x7f02002c;
-        public static final int web_toolbar_background=0x7f02002d;
-        public static final int web_toolbar_icon_before=0x7f02002e;
-        public static final int web_toolbar_icon_before_off=0x7f02002f;
-        public static final int web_toolbar_icon_next=0x7f020030;
-        public static final int web_toolbar_icon_next_off=0x7f020031;
+        public static final int ic_home=0x7f020017;
+        public static final int icon=0x7f020018;
+        public static final int next_button_style=0x7f020019;
+        public static final int oficinas_line_android=0x7f02001a;
+        public static final int oficinas_marco_mapa_android=0x7f02001b;
+        public static final int oficinas_page_control=0x7f02001c;
+        public static final int oficinas_page_control_=0x7f02001d;
+        public static final int oficinas_poid_mapa_android=0x7f02001e;
+        public static final int operativa_box_login_android=0x7f02001f;
+        public static final int operativa_btn_aceptar_android=0x7f020020;
+        public static final int operativa_logo_android=0x7f020021;
+        public static final int pager_indicator_style=0x7f020022;
+        public static final int splash=0x7f020023;
+        public static final int tab_background_style=0x7f020024;
+        public static final int tab_banking_operations_style=0x7f020025;
+        public static final int tab_contacts_style=0x7f020026;
+        public static final int tab_disclaimer_style=0x7f020027;
+        public static final int tab_offices_style=0x7f020028;
+        public static final int tab_public_web_style=0x7f020029;
+        public static final int web_btn_refresh=0x7f02002a;
+        public static final int web_toolbar_background=0x7f02002b;
+        public static final int web_toolbar_icon_before=0x7f02002c;
+        public static final int web_toolbar_icon_before_off=0x7f02002d;
+        public static final int web_toolbar_icon_next=0x7f02002e;
+        public static final int web_toolbar_icon_next_off=0x7f02002f;
     }
     public static final class id {
         public static final int actionbar_compat=0x7f060000;
@@ -110,66 +108,58 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int menu_search=0x7f06000a;
         public static final int menu_settings=0x7f060009;
         public static final int menu_share=0x7f06000b;
+        public static final int menu_web_back=0x7f06000d;
+        public static final int menu_web_next=0x7f06000e;
+        public static final int menu_web_refresh=0x7f06000c;
         public static final int tabmanagercontent_title=0x7f060007;
         public static final int toggle_title=0x7f060005;
     }
     public static final class layout {
         public static final int actionbar_compat=0x7f030000;
         public static final int actionbar_indeterminate_progress=0x7f030001;
-        public static final int activity_main=0x7f030002;
-        public static final int main=0x7f030003;
-        public static final int tabmanager=0x7f030004;
-        public static final int tabmanagercontent=0x7f030005;
-        public static final int webactivity=0x7f030006;
+        public static final int main=0x7f030002;
+        public static final int tabmanager=0x7f030003;
+        public static final int tabmanagercontent=0x7f030004;
+        public static final int webactivity=0x7f030005;
     }
     public static final class menu {
         public static final int activity_main=0x7f090000;
         public static final int main=0x7f090001;
+        public static final int web_activity=0x7f090002;
     }
     public static final class string {
         public static final int alternate_title=0x7f070001;
         public static final int app_name=0x7f070000;
-        /**  Images definitions 
-         */
-        public static final int first_indicator_info=0x7f07001a;
-        public static final int getting_location=0x7f070018;
-        public static final int go_back=0x7f070013;
-        public static final int go_forward=0x7f070012;
-        public static final int hello_world=0x7f070006;
+        public static final int getting_location=0x7f070014;
+        public static final int go_back=0x7f07000f;
+        public static final int go_forward=0x7f07000e;
         /**  Alerts 
          */
-        public static final int loading=0x7f070016;
-        public static final int location_failed=0x7f070019;
-        public static final int map_alert_msg=0x7f070017;
-        public static final int menu_refresh=0x7f070003;
-        public static final int menu_search=0x7f070004;
-        public static final int menu_settings=0x7f070007;
-        public static final int menu_share=0x7f070005;
-        public static final int no=0x7f07000b;
-        /**  Common 
-         */
-        public static final int ok=0x7f070009;
+        public static final int loading=0x7f070012;
+        public static final int location_failed=0x7f070015;
         /**  Titles 
          */
-        public static final int op_bancaria=0x7f070015;
-        public static final int refresh=0x7f070014;
-        public static final int second_indicator_info=0x7f07001b;
+        public static final int main_name=0x7f070011;
+        public static final int map_alert_msg=0x7f070013;
+        public static final int menu_refresh=0x7f070003;
+        public static final int menu_search=0x7f070004;
+        public static final int menu_share=0x7f070005;
+        public static final int no=0x7f070008;
+        /**  Common 
+         */
+        public static final int ok=0x7f070006;
+        public static final int refresh=0x7f070010;
         /**  Web View actions 
          */
-        public static final int send_mail=0x7f070011;
+        public static final int send_mail=0x7f07000d;
         /**  Tabs 
          */
-        public static final int tab_banking_ops=0x7f07000c;
-        public static final int tab_contact=0x7f07000e;
-        public static final int tab_disclaimer=0x7f070010;
-        public static final int tab_offices=0x7f07000d;
-        public static final int tab_web=0x7f07000f;
-        public static final int title_activity_main=0x7f070008;
+        public static final int tab_comerc=0x7f070009;
+        public static final int tab_management=0x7f07000a;
+        public static final int tab_profile=0x7f07000b;
+        public static final int tab_ranking=0x7f07000c;
         public static final int toggle_title=0x7f070002;
-        public static final int web_center_button=0x7f07001d;
-        public static final int web_left_button=0x7f07001c;
-        public static final int web_right_button=0x7f07001e;
-        public static final int yes=0x7f07000a;
+        public static final int yes=0x7f070007;
     }
     public static final class style {
         public static final int ActionBar=0x7f080008;

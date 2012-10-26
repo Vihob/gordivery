@@ -1,9 +1,6 @@
 <resources>
 
-    <string name="app_name">GordiveryApp</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="app_name">Gordivery App</string>
     
     <!-- Common -->
     <string name="ok">OK</string>
@@ -11,11 +8,10 @@
     <string name="no">No</string>
 
     <!-- Tabs -->
-    <string name="tab_banking_ops">Banca Online</string>
-    <string name="tab_offices">Oficinas</string>
-    <string name="tab_contact">Contacto</string>
-    <string name="tab_web">Web</string>
-    <string name="tab_disclaimer">Aviso Legal</string>
+    <string name="tab_comerc">Comercios</string>
+    <string name="tab_management">Mis cuentas</string>
+    <string name="tab_profile">Perfil</string>
+    <string name="tab_ranking">Ranking</string>
     
     <!-- Web View actions -->
     <string name="send_mail">Send mail&#8230;</string>
@@ -24,19 +20,11 @@
     <string name="refresh">Recargar</string>
     
     <!-- Titles -->
-    <string name="op_bancaria">Operativa Bancaria</string>
+    <string name="main_name">Gordivery App</string>
     
     <!-- Alerts -->
     <string name="loading">Cargando&#8230;</string>
     <string name="map_alert_msg">Va a abrir la aplicación de mapas del telefono, ¿desea continuar?</string>
     <string name="getting_location">Obteniendo localización</string>
     <string name="location_failed">No se ha podido obtener la localización, por favor active el GPS y la red WI-FI en los ajustes de su teléfono y vuelva a intentarlo.</string>
-
-    <!-- Images definitions -->
-    <string name="first_indicator_info">Selector para Oficina 1</string>
-    <string name="second_indicator_info">Selector para Oficina 2</string>
-    <string name="web_left_button">Web left Button</string>
-    <string name="web_center_button">Web Center Button</string>
-    <string name="web_right_button">Web Right Button</string>
-
 </resources>
