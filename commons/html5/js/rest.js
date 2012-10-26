@@ -77,7 +77,39 @@ Dependencies:
 		*/
 		fakeMode : function(){
 			return dropboxJsons;
-		}
+		},
+
+		/**
+		* Get Office1 info
+		* @param success {Function(Object json)} function to receive json in case of success
+		* @param error {Function(jqXHR, textStatus, errorThrown)} function in case of error
+		*/
+		doLogin: function(success, error, anUser, aPassword){
+
+			//get base login URL
+			var url = kLogin;
+
+			//add get parameters login req
+			url = url + kLoginUsernameParam + anUser + kLoginPasswordParam + aPassword;
+
+			//Don't needed. Its impossible to get accesToken with fake JSON.
+			if(dropboxJsons)
+				url = "http://dl.dropbox.com/u/89277349/lineaCaminos/login.xml";
+
+			// Try to open and parse a XML document
+			$.ajax({
+        		type: "GET",
+        		url: url,
+       			dataType: "xml",
+        		success: parseXML,
+        		error: error
+      		});
+
+      		function parseXML(xml){
+      			var login = DAO.parseLogin(xml);      			
+      			success( login, 200 );
+      		}
+		},
 	};
 
 	//Exposing restConsumer
