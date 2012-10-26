@@ -25,6 +25,16 @@ var comercController = function (){
 
     var viewWillAppear = function(){
 
+        //Check is user logged
+        var user_token = localStorage.getItem( k_USER_LOGIN_TOKEN );
+        if ( utils.isNotEmptyLocalStorageStringKey( user_token ) ) {
+            utils.showActivityView();
+            //Call rest method
+        } else {
+            //Show LoginView
+            window.location = "push:"+k_LOGINL_VIEW_PATH;
+        };
+
     }
 
     //--------------------------------------------------------------
