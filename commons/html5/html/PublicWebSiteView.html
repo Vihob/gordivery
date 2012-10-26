@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Banco Caminos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href="../css/common.css" rel="stylesheet" type="text/css" />
+<link href="../css/jquery.alerts.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="../js/jquery.alerts.js"></script>
+<script type="text/javascript" src="../js/Defines.js"></script>
+<script type="text/javascript" src="../js/utils.js"></script>
+<script type="text/javascript" src="../js/literals.js"></script>
+<script type="text/javascript" src="../js/rest.js"></script>
+<script type="text/javascript" src="../js/DAO.js"></script>
+<script type="text/javascript" src="../js/PublicWebSiteController.js"></script>
+
+
+
+<script type="text/javascript">
+	
+	//Add platform CSS (iphone/android)
+	var userAgent = navigator.userAgent;
+	if (userAgent.match(/Android/)) {
+		$('head').append('<link rel="stylesheet" href="../css/android.css" type="text/css" />');
+	}
+	else if (userAgent.match(/(iPhone|iPod|iPad)/)) {
+		$('head').append('<link rel="stylesheet" href="../css/iphone.css" type="text/css" />');
+	}
+
+	$(document).ready(function(){
+		publicWebSiteController.viewLoaded();    
+	});
+
+</script>
+</head>
+
+<body>
+<div class="mb_page" id="public_website_view">
+
+	<div class="login_content">
+		<div class="form_wrapper">
+				<form id="login_form">    	
+					<div align="center">
+						<img src="../imgs/operativa_bancaria_logo@2x.png" class="login_form_logo"> 
+					</div>
+			        <div align="center">
+			        	<br/>
+			        	<span id="public_web_text" class="public_web_text">_someText</span>
+			        	<br/><br/>	        
+			    	    <input id="login_form_submit" class="login_form_submit" type="submit" value="_accept" />
+			        </div>
+			    </form>	
+		</div>	    
+	</div>
+
+</div>
+</body>
+
+</html>
