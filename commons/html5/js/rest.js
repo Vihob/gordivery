@@ -10,10 +10,11 @@ Dependencies:
 	//Dropbox versions - Requires a json inside Dropbox (rosa@mobivery.com account) public folder.
 	var dropboxJsons = false;	//Base and Domains
 	
-	var kBaseAPIURL = "www.finapps.services/";
+	var kBaseAPIURL = "http://finappsapi.bdigital.org/api/2012/5108b053ed/";
 
 	// Application URLS
-	var kGetCommerces = "https://"+kBaseAPIURL+"...";
+	var kGetCommerces = kBaseAPIURL+"operations/commerce/search/near?lat=41.402391&lng=2.194765&radius=0.5";
+
 
 	var k_TimeOut = 10;
 	var k_LongTimeOut = 25;
@@ -23,15 +24,53 @@ Dependencies:
 	var kMaxResultsPerPage = 20;     /// Set the max results per page on search offers
 
 
-	//*******************************************************
+	//*******************************************************/
 	//	PRIVATE FUNCTIONS
-	//*******************************************************
+	//*******************************************************/
 
 	//CLASSES
 	var restConsumer = {
 
-		//TODO
-		//Implements services...
+		getComerces : function(lat,lon, success, error){
+
+			var accessToken = localStorage.getItem( k_ACCESS_TOKEN_KEY );
+			if(!dropboxJsons && !utils.isNotEmptyLocalStorageStringKey(accessToken)){
+				error();
+				return;
+			}
+			
+			var url = kGetMovement;
+			var data = DAO.getMovementDetailPushData(accessToken,movementId);
+			var type = 'POST';
+			
+			console.log("Get Movements data: "+data);
+			
+			if(dropboxJsons){
+				url = "https://dl.dropbox.com/u/89277349/caminosOnTime/detalle_movimiento.xml";
+				data = '';
+				type = 'GET';
+			}
+			
+			// Your code here
+	        $.ajax({
+	            //this is a 'cross-origin' domain
+	            url : url,
+	            type : type,
+	            data : data,
+	            contentType: 'text/xml',
+				dataType : 'xml',
+	            success : parseXML,
+	            error : error
+	        });
+	        
+	        function parseXML(xml){
+      			var movement = new Object();
+
+      			movement = DAO.parseMovement($(xml).find("DETALLE_MOVIMIENTO"));
+
+      			success( movement, 200 );
+	        }
+		},
 		
 		/**
 		* Indicates whether rest consumer is in fake mode or not.
