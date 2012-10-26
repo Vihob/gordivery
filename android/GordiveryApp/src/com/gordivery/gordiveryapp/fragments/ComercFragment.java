@@ -1,7 +1,9 @@
 package com.gordivery.gordiveryapp.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import com.gordivery.gordiveryapp.LoginActivity;
 import com.gordivery.gordiveryapp.utils.Defs;
 
 public class ComercFragment extends BaseWebFragment {
@@ -16,5 +18,19 @@ public class ComercFragment extends BaseWebFragment {
 	public void onViewVisible(){
 		mWebView.loadUrl("javascript:"+Defs.comercJS);
 	}
+	
+	@Override 
+    public void onActivityResult (int requestCode, int resultCode, Intent data){
+    	if(requestCode == Defs.LoginActivity){
+    		mWebView.loadUrl("javascript:"+Defs.comercJS);
+    	}
+    }
+	
+	@Override
+    protected boolean overridePushUrl(String url){
+    	Intent intent = new Intent(getActivity(), LoginActivity.class);
+    	startActivityForResult(intent,Defs.LoginActivity);
+		return true;
+    }
 
 }
