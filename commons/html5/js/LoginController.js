@@ -99,34 +99,28 @@ var loginController = function (){
     // Rest callbacks
     //--------------------------------------------------------------
 
-    function loginDone(data, statusCode){        
-        if (data) {          
-          console.log("Login done with data: "+data);
-          if (data.serverError != ""){
-            utils.showAlertCallWithTitleAndMessage(L.get('_error'),L.get('_wrongUserOrPasword'));
-          }else if(data.resultLink == ""){
-            console.log("Login done without result url");
-            onLoginError();
-          }else{
-            //login was OK, just open result URL!
-            console.log("URL to load:"+data.resultLink);
-            window.location = "web:"+data.resultLink;
-            //Delete password field
-            $("#login_form_pass").val('');          
-          }
-          
+    function loginDone(data, statusCode){  
+
+        if (data) {
+            if (data.status == "OK") {
+                //Save user token
+                localStorage.setItem( k_USER_LOGIN_TOKEN, data.token );
+                //Close LoginView
+                window.location = "closeModal:";
+            }else {
+                utils.showAlertCallWithTitleAndMessage(L.get('_error'),L.get('_wrongUserOrPasword'));
+            };
         } 
         else {
-          console.log("Login done without data");
           onLoginError();
-        }
+        };
 
         utils.hideActivityView();
     }
 
     function onLoginError(){
         utils.showAlertCallWithTitleAndMessage(L.get('_connectionError'),L.get('_checkNetworkSettings'));
-         utils.hideActivityView();
+        utils.hideActivityView();
     }
 
     //Functions or variables returned here will be public (accessing like loginController.viewLoaded())
