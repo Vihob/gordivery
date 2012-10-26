@@ -7,6 +7,7 @@
 	/*Removes Android 2.3.6- border selection*/
 	-webkit-focus-ring-color: rgba(0, 0, 0, 0);
 	height: auto;
+	font-family: helvetica, arial, sans-serif;
 }
 
 html {
@@ -78,6 +79,89 @@ div {
 /*******************************************************************
 COMERC
 *******************************************************************/
+
+
+.near_list{
+	width: 100%;
+	height: auto;
+	
+}
+
+.near_list_element{
+	width: 100%;
+	height: 76px;
+	position: relative;
+	border-bottom: 1px solid rgb(220,220,245);
+	border-top: 1px solid rgb(250,250,255);
+}
+.near_list_element:nth-child(odd){
+	background: rgb(245,245,255);
+}
+
+.near_list_element:nth-child(even){
+	background: rgb(250,250,255);
+}
+
+.near_li_img { 
+	width: 54px;
+	height: 54px;
+	position: absolute;
+	left: 12px;
+	top: 8px;
+	border-radius: 4px;
+	border: 3px solid #fff;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.1);
+
+} 
+
+.near_li_img img{
+	width: 54px;
+	height: 54px;
+	border-radius: 4px;
+}
+
+.near_li_name { 
+	min-width: 60%;
+	max-width: 70%;
+	height: auto;
+	position: absolute;
+	left: 85px;
+	top: 12px;
+	font-size:19px;
+	font-weight: bold;
+
+} 
+
+.near_li_description { 
+	width: 65%;
+	height: auto;
+	position: absolute;
+	left: 85px;
+	top: 43px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 15px;
+	font-weight: normal;
+
+} 
+
+.near_li_distance { 
+	width: 12%;
+	height: auto;
+	position: absolute;
+	right: 10px;
+	top: 43px;
+	text-align: right;
+	font-size: 14px;
+} 
+
+/*******************************************************************
+COMERC DETAIL
+*******************************************************************/
+
+
+
+
 
 
 /*******************************************************************
