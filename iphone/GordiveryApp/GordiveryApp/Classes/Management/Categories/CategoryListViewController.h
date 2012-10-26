@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "WebViewBaseViewController.h"
 
-@interface CategoryListViewController : WebViewBaseViewController
+@interface CategoryListViewController : WebViewBaseViewController<UIWebViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIWebView *webview;
 
 @end

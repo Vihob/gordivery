@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "WebViewBaseViewController.h"
 
-@interface ProfileViewController : WebViewBaseViewController
+@interface ProfileViewController : WebViewBaseViewController<UIWebViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIWebView *webview;
+
+
 
 @end
