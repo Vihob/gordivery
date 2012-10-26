@@ -17,12 +17,17 @@
 		E6018438163AE0F400B2869C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6018437163AE0F400B2869C /* Default@2x.png */; };
 		E601843A163AE0F400B2869C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6018439163AE0F400B2869C /* Default-568h@2x.png */; };
 		E601843D163AE0F400B2869C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E601843B163AE0F400B2869C /* MainStoryboard.storyboard */; };
-		E6018440163AE0F400B2869C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601843F163AE0F400B2869C /* FirstViewController.m */; };
-		E6018442163AE0F400B2869C /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E6018441163AE0F400B2869C /* first.png */; };
-		E6018444163AE0F400B2869C /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6018443163AE0F400B2869C /* first@2x.png */; };
-		E6018447163AE0F400B2869C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018446163AE0F400B2869C /* SecondViewController.m */; };
-		E6018449163AE0F400B2869C /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = E6018448163AE0F400B2869C /* second.png */; };
-		E601844B163AE0F400B2869C /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E601844A163AE0F400B2869C /* second@2x.png */; };
+		E6018467163AE98200B2869C /* ComercDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018466163AE98200B2869C /* ComercDetailViewController.m */; };
+		E601846A163AE99800B2869C /* TransactionCompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018469163AE99800B2869C /* TransactionCompleteViewController.m */; };
+		E601846D163AE9B400B2869C /* ComercListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601846C163AE9B400B2869C /* ComercListViewController.m */; };
+		E6018470163AE9D900B2869C /* ComercMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601846F163AE9D900B2869C /* ComercMapViewController.m */; };
+		E6018473163AEA0700B2869C /* TransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018472163AEA0700B2869C /* TransactionViewController.m */; };
+		E6018476163AEA2200B2869C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018475163AEA2200B2869C /* ProfileViewController.m */; };
+		E6018479163AEA3800B2869C /* CreditCardSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018478163AEA3800B2869C /* CreditCardSelectorViewController.m */; };
+		E601847C163AEA5100B2869C /* RankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601847B163AEA5100B2869C /* RankingViewController.m */; };
+		E601847F163AEA6800B2869C /* CategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601847E163AEA6800B2869C /* CategoryListViewController.m */; };
+		E6018482163AEA7C00B2869C /* TransactionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018481163AEA7C00B2869C /* TransactionListViewController.m */; };
+		E6018485163AEA9200B2869C /* TransactionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018484163AEA9200B2869C /* TransactionDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,14 +45,28 @@
 		E6018437163AE0F400B2869C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E6018439163AE0F400B2869C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E601843C163AE0F400B2869C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E601843E163AE0F400B2869C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		E601843F163AE0F400B2869C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		E6018441163AE0F400B2869C /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		E6018443163AE0F400B2869C /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		E6018445163AE0F400B2869C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		E6018446163AE0F400B2869C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		E6018448163AE0F400B2869C /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		E601844A163AE0F400B2869C /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		E6018465163AE98200B2869C /* ComercDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComercDetailViewController.h; sourceTree = "<group>"; };
+		E6018466163AE98200B2869C /* ComercDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComercDetailViewController.m; sourceTree = "<group>"; };
+		E6018468163AE99800B2869C /* TransactionCompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionCompleteViewController.h; sourceTree = "<group>"; };
+		E6018469163AE99800B2869C /* TransactionCompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionCompleteViewController.m; sourceTree = "<group>"; };
+		E601846B163AE9B400B2869C /* ComercListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComercListViewController.h; sourceTree = "<group>"; };
+		E601846C163AE9B400B2869C /* ComercListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComercListViewController.m; sourceTree = "<group>"; };
+		E601846E163AE9D900B2869C /* ComercMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComercMapViewController.h; sourceTree = "<group>"; };
+		E601846F163AE9D900B2869C /* ComercMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComercMapViewController.m; sourceTree = "<group>"; };
+		E6018471163AEA0700B2869C /* TransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionViewController.h; sourceTree = "<group>"; };
+		E6018472163AEA0700B2869C /* TransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionViewController.m; sourceTree = "<group>"; };
+		E6018474163AEA2200B2869C /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		E6018475163AEA2200B2869C /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		E6018477163AEA3800B2869C /* CreditCardSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardSelectorViewController.h; sourceTree = "<group>"; };
+		E6018478163AEA3800B2869C /* CreditCardSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardSelectorViewController.m; sourceTree = "<group>"; };
+		E601847A163AEA5100B2869C /* RankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingViewController.h; sourceTree = "<group>"; };
+		E601847B163AEA5100B2869C /* RankingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingViewController.m; sourceTree = "<group>"; };
+		E601847D163AEA6800B2869C /* CategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListViewController.h; sourceTree = "<group>"; };
+		E601847E163AEA6800B2869C /* CategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListViewController.m; sourceTree = "<group>"; };
+		E6018480163AEA7C00B2869C /* TransactionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionListViewController.h; sourceTree = "<group>"; };
+		E6018481163AEA7C00B2869C /* TransactionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionListViewController.m; sourceTree = "<group>"; };
+		E6018483163AEA9200B2869C /* TransactionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionDetailViewController.h; sourceTree = "<group>"; };
+		E6018484163AEA9200B2869C /* TransactionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,17 +113,10 @@
 		E6018429163AE0F400B2869C /* GordiveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				E601845A163AE94C00B2869C /* Classes */,
 				E6018432163AE0F400B2869C /* AppDelegate.h */,
 				E6018433163AE0F400B2869C /* AppDelegate.m */,
 				E601843B163AE0F400B2869C /* MainStoryboard.storyboard */,
-				E601843E163AE0F400B2869C /* FirstViewController.h */,
-				E601843F163AE0F400B2869C /* FirstViewController.m */,
-				E6018441163AE0F400B2869C /* first.png */,
-				E6018443163AE0F400B2869C /* first@2x.png */,
-				E6018445163AE0F400B2869C /* SecondViewController.h */,
-				E6018446163AE0F400B2869C /* SecondViewController.m */,
-				E6018448163AE0F400B2869C /* second.png */,
-				E601844A163AE0F400B2869C /* second@2x.png */,
 				E601842A163AE0F400B2869C /* Supporting Files */,
 			);
 			path = GordiveryApp;
@@ -122,6 +134,115 @@
 				E6018439163AE0F400B2869C /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E601845A163AE94C00B2869C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E601845B163AE94C00B2869C /* Comerc */,
+				E6018460163AE94C00B2869C /* Management */,
+				E6018463163AE94C00B2869C /* Profile */,
+				E6018464163AE94C00B2869C /* Ranking */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E601845B163AE94C00B2869C /* Comerc */ = {
+			isa = PBXGroup;
+			children = (
+				E601845D163AE94C00B2869C /* List */,
+				E601845E163AE94C00B2869C /* Map */,
+				E601845C163AE94C00B2869C /* Detail */,
+				E601845F163AE94C00B2869C /* Transaction */,
+			);
+			path = Comerc;
+			sourceTree = "<group>";
+		};
+		E601845C163AE94C00B2869C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E6018465163AE98200B2869C /* ComercDetailViewController.h */,
+				E6018466163AE98200B2869C /* ComercDetailViewController.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		E601845D163AE94C00B2869C /* List */ = {
+			isa = PBXGroup;
+			children = (
+				E601846B163AE9B400B2869C /* ComercListViewController.h */,
+				E601846C163AE9B400B2869C /* ComercListViewController.m */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		E601845E163AE94C00B2869C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E601846E163AE9D900B2869C /* ComercMapViewController.h */,
+				E601846F163AE9D900B2869C /* ComercMapViewController.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		E601845F163AE94C00B2869C /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				E6018468163AE99800B2869C /* TransactionCompleteViewController.h */,
+				E6018469163AE99800B2869C /* TransactionCompleteViewController.m */,
+				E6018471163AEA0700B2869C /* TransactionViewController.h */,
+				E6018472163AEA0700B2869C /* TransactionViewController.m */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		E6018460163AE94C00B2869C /* Management */ = {
+			isa = PBXGroup;
+			children = (
+				E6018461163AE94C00B2869C /* Categories */,
+				E6018462163AE94C00B2869C /* Transactions */,
+			);
+			path = Management;
+			sourceTree = "<group>";
+		};
+		E6018461163AE94C00B2869C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E601847D163AEA6800B2869C /* CategoryListViewController.h */,
+				E601847E163AEA6800B2869C /* CategoryListViewController.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		E6018462163AE94C00B2869C /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				E6018480163AEA7C00B2869C /* TransactionListViewController.h */,
+				E6018481163AEA7C00B2869C /* TransactionListViewController.m */,
+				E6018483163AEA9200B2869C /* TransactionDetailViewController.h */,
+				E6018484163AEA9200B2869C /* TransactionDetailViewController.m */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		E6018463163AE94C00B2869C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E6018474163AEA2200B2869C /* ProfileViewController.h */,
+				E6018475163AEA2200B2869C /* ProfileViewController.m */,
+				E6018477163AEA3800B2869C /* CreditCardSelectorViewController.h */,
+				E6018478163AEA3800B2869C /* CreditCardSelectorViewController.m */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E6018464163AE94C00B2869C /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+				E601847A163AEA5100B2869C /* RankingViewController.h */,
+				E601847B163AEA5100B2869C /* RankingViewController.m */,
+			);
+			path = Ranking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,10 +300,6 @@
 				E6018438163AE0F400B2869C /* Default@2x.png in Resources */,
 				E601843A163AE0F400B2869C /* Default-568h@2x.png in Resources */,
 				E601843D163AE0F400B2869C /* MainStoryboard.storyboard in Resources */,
-				E6018442163AE0F400B2869C /* first.png in Resources */,
-				E6018444163AE0F400B2869C /* first@2x.png in Resources */,
-				E6018449163AE0F400B2869C /* second.png in Resources */,
-				E601844B163AE0F400B2869C /* second@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +312,17 @@
 			files = (
 				E6018430163AE0F400B2869C /* main.m in Sources */,
 				E6018434163AE0F400B2869C /* AppDelegate.m in Sources */,
-				E6018440163AE0F400B2869C /* FirstViewController.m in Sources */,
-				E6018447163AE0F400B2869C /* SecondViewController.m in Sources */,
+				E6018467163AE98200B2869C /* ComercDetailViewController.m in Sources */,
+				E601846A163AE99800B2869C /* TransactionCompleteViewController.m in Sources */,
+				E601846D163AE9B400B2869C /* ComercListViewController.m in Sources */,
+				E6018470163AE9D900B2869C /* ComercMapViewController.m in Sources */,
+				E6018473163AEA0700B2869C /* TransactionViewController.m in Sources */,
+				E6018476163AEA2200B2869C /* ProfileViewController.m in Sources */,
+				E6018479163AEA3800B2869C /* CreditCardSelectorViewController.m in Sources */,
+				E601847C163AEA5100B2869C /* RankingViewController.m in Sources */,
+				E601847F163AEA6800B2869C /* CategoryListViewController.m in Sources */,
+				E6018482163AEA7C00B2869C /* TransactionListViewController.m in Sources */,
+				E6018485163AEA9200B2869C /* TransactionDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +438,7 @@
 				E6018450163AE0F400B2869C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
