@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ComercMapViewController.h
 //  GordiveryApp
 //
 //  Created by Victor L. Fernandez Rodrigo on 26/10/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface ComercMapViewController : UIViewController
 
 @end
