@@ -72,18 +72,6 @@ Dependencies:
 	        }
 		},
 		
-		/**
-		* Indicates whether rest consumer is in fake mode or not.
-		*/
-		fakeMode : function(){
-			return dropboxJsons;
-		},
-
-		/**
-		* Get Office1 info
-		* @param success {Function(Object json)} function to receive json in case of success
-		* @param error {Function(jqXHR, textStatus, errorThrown)} function in case of error
-		*/
 		doLogin: function(success, error, anUser, aPassword){
 
 			//get base login URL
@@ -110,6 +98,15 @@ Dependencies:
       			success( login, 200 );
       		}
 		},
+		
+		/**
+		* Indicates whether rest consumer is in fake mode or not.
+		*/
+		fakeMode : function(){
+			return dropboxJsons;
+		}
+
+
 	};
 
 	//Exposing restConsumer
