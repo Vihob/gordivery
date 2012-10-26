@@ -12,6 +12,7 @@
 @interface ComercListViewController : WebViewBaseViewController <UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webview;
+@property (weak, nonatomic) NSString *urlString;
 
 
 @end

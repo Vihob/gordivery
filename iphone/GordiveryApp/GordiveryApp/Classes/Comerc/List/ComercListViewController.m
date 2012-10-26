@@ -7,6 +7,8 @@
 //
 
 #import "ComercListViewController.h"
+#import "LoginViewController.h"
+#import "Defines.h"
 
 @interface ComercListViewController ()
 
@@ -27,7 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-        [self configureView];
+    [self configureView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -58,6 +60,31 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Private Methods
+
+- (void)openLoginViewControllerWithUrlString:(NSString *)url {
+    
+    self.urlString = url;
+    [self performSegueWithIdentifier:k_LoginModal sender:self];
+}
+
+#pragma mark - Segues
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:k_LoginModal]) {
+        LoginViewController *loginViewController = (LoginViewController *) [segue destinationViewController];
+        [loginViewController setLocalUrl:self.urlString];
+    }
+    
+}
+
+#pragma mark - Overriden methods
+
+- (void)pushURLOnViewController:(NSString*)urlToLoad{
+    [self openLoginViewControllerWithUrlString:urlToLoad];
 }
 
 @end

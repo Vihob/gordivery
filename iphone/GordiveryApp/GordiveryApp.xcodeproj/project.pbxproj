@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8517DB6E163B4FBD005E2CCE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517DB6D163B4FBD005E2CCE /* LoginViewController.m */; };
 		E6018424163AE0F400B2869C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6018423163AE0F400B2869C /* UIKit.framework */; };
 		E6018426163AE0F400B2869C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6018425163AE0F400B2869C /* Foundation.framework */; };
 		E6018428163AE0F400B2869C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6018427163AE0F400B2869C /* CoreGraphics.framework */; };
@@ -36,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8517DB6C163B4FBD005E2CCE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		8517DB6D163B4FBD005E2CCE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		8517DB73163B525B005E2CCE /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		E601841F163AE0F400B2869C /* GordiveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GordiveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6018423163AE0F400B2869C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E6018425163AE0F400B2869C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8517DB6A163B4FB1005E2CCE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8517DB6C163B4FBD005E2CCE /* LoginViewController.h */,
+				8517DB6D163B4FBD005E2CCE /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		E6018414163AE0F400B2869C = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +144,7 @@
 				E6018497163B140E00B2869C /* html5 */,
 				E601845A163AE94C00B2869C /* Classes */,
 				E6018432163AE0F400B2869C /* AppDelegate.h */,
+				8517DB73163B525B005E2CCE /* Defines.h */,
 				E6018433163AE0F400B2869C /* AppDelegate.m */,
 				E601843B163AE0F400B2869C /* MainStoryboard.storyboard */,
 				E601842A163AE0F400B2869C /* Supporting Files */,
@@ -155,6 +169,7 @@
 		E601845A163AE94C00B2869C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8517DB6A163B4FB1005E2CCE /* Login */,
 				E601845B163AE94C00B2869C /* Comerc */,
 				E6018460163AE94C00B2869C /* Management */,
 				E6018463163AE94C00B2869C /* Profile */,
@@ -365,6 +380,7 @@
 				E601848D163AF37A00B2869C /* WebViewBaseViewController.m in Sources */,
 				E6018494163AF49B00B2869C /* LoadingViewController.m in Sources */,
 				E6018496163AF49B00B2869C /* Utils.m in Sources */,
+				8517DB6E163B4FBD005E2CCE /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
