@@ -15,16 +15,6 @@
 		"_next" : "Siguiente",
 		"_login" : "Login",
 
-		"_bankingOperations" : "Operativa",
-
-		"_offices" : "Oficinas",
-
-		"_contacts" : "Contactos",
-
-		"_publicWeb" : "Web",
-
-		"_disclaimer" : "Aviso Legal",
-
 		"_serverErrorLogin" : "Error de acceso debido al servidor",
 
 		"_wrongUserOrPasword" : "Usuario y/o contraseña no válidos",
@@ -33,11 +23,7 @@
 
 		"_checkNetworkSettings" : "Revise los ajustes de red de su dispositivo.",
 
-		"_error" : "Error",
-
-		"_publicWebSiteText" : "Bienvenidos a la App de Bancocaminos. Visita nuestra Web Pública.",
-
-		"_openPublicWeb" : "Visitar la Web"
+		"_error" : "Error"
 	},
 	"en" : {	
 		"_cancel" : "Cancel",
@@ -51,16 +37,6 @@
 		"_delete" : "Delete",
 		"_retry" : "Retry",
 		"_next" : "Next",
-		"_login" : "Login",
-
-		"_bankingOperations" : "Banking Op.",
-
-		"_offices" : "Offices",
-
-		"_contacts" : "Contacts",
-
-		"_publicWeb" : "Public Web",
-
-		"_disclaimer" : "Disclaimer"
+		"_login" : "Login"
 	}
 }

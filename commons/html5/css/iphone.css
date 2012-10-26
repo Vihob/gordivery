@@ -7,169 +7,19 @@ LAYOUT
 
 
 /*******************************************************************
-Banking Operations
+COMERC
 *******************************************************************/
 
-.login_form_username, .login_form_pass{
-	font-family: Helvetica, sans-serif;
-}
-
-.login_form_submit {
-	font-family: Helvetica, sans-serif;
-}
 
 /*******************************************************************
-Offices
+MANAGEMENT
 *******************************************************************/
 
-.officeName {
-	font-family: Georgia-Bold,sans-serif;
-}
-
-.officeDescription {
-	font-family: Arial,sans-serif;
-}
-
-.officeCommonTitle {
-	font-family: Arial,sans-serif;
-}
-
-.officeCommonDescription {
-	padding-left: 60px;
-	font-family: Arial,sans-serif;
-	font-weight: bold;
-}
-
-.officeShceduleDescription {
-	padding-left: 60px;
-	font-family: Arial,sans-serif;
-}
-
-.office_bloc_icon {
-	float: left;
-	padding-left: 25px;
-}
-
-.office_bloc_icon_phone {
-	width: 30px;
-	height: 30px;
-	background: url(../imgs/oficinas_btn_telefono_android.png) center center no-repeat;
-}
-
-.office_bloc_icon_fax {
-	width: 25px;
-	height: 25px;
-	padding-left: 30px;
-	background: url(../imgs/oficinas_icon_fax_android.png) center center no-repeat;
-}
-
-.office_bloc_icon_email {
-	width: 30px;
-	height: 30px;
-	background: url(../imgs/oficinas_btn_email_android.png) center center no-repeat;
-}
-
-.office_bloc_icon_schedule {
-	width: 25px;
-	height: 25px;
-	padding-left: 30px;
-	background: url(../imgs/oficinas_icon_time_android.png) center center no-repeat;
-}
-
-.office_bloc_icon_direction {
-	width: 30px;
-	height: 30px;
-	background: url(../imgs/oficinas_btn_mapa.png) center center no-repeat;
-}
 
 /*******************************************************************
-Contacts
+PROFILE
 *******************************************************************/
-
-.contact_title {
-	font-family: Georgia,sans-serif;
-}
-
-.area_title {
-	font-family: Arial,sans-serif;
-}
-
-.area_bloc_text {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 20px;
-	padding-right: 15px;
-}
-
-.area_bloc_text_name {
-	font-family: Arial,sans-serif;
-	padding-left: 12px;
-}
-
-.area_bloc_text_description {
-	font-family: Arial-Bold,sans-serif;
-	padding-left: 12px;
-}
-
-.area_bloc_icon {
-	float: left;
-	margin-top: 3px;
-}
-
-.contacts_bloc_icon_phone {
-	width: 30px;
-	height: 30px;
-	background: url(../imgs/oficinas_btn_telefono_android.png) center center no-repeat;
-}
-
-.contacts_bloc_icon_fax {
-	width: 25px;
-	height: 25px;
-	margin-top: 5px;
-	padding-left: 3px;
-	background: url(../imgs/oficinas_icon_fax_android.png) center center no-repeat;
-}
-
-.contacts_bloc_icon_email {
-	width: 30px;
-	height: 30px;
-	background: url(../imgs/oficinas_btn_email_android.png) center center no-repeat;
-}
-
-.contacts_bloc_icon_direction {
-	width: 30px;
-	height: 30px;
-	background: url(../imgs/oficinas_btn_mapa.png) center center no-repeat;
-}
 
 /*******************************************************************
-Public Web
+RANKING
 *******************************************************************/
-	
-.public_web_text {
-	font-family: Arial,sans-serif;
-}
-
-/*******************************************************************
-Disclaimer
-*******************************************************************/
-
-.disclaimer_bloc_disclosure_icon {
-	width: 10px;
-	height: 18px;
-	float: right;
-	background: url(../imgs/aviso_legal_icon_disclosure@2x.png) center center no-repeat;
-	background-size: contain;
-}
-
-.disclaimer_title {
-	font-family: Arial,sans-serif;
-}
-
-.disclaimer_detail_title {
-	font-family: Arial,sans-serif;
-}
-
-.disclaimer_detail_description {
-	font-family: Arial,sans-serif;
-}
