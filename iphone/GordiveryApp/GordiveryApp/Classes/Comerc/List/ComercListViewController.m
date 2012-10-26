@@ -7,6 +7,7 @@
 //
 
 #import "ComercListViewController.h"
+#import "ComercDetailViewController.h"
 
 @interface ComercListViewController ()
 
@@ -45,7 +46,7 @@
     //Adapt mainWebView
     [self.webview setScalesPageToFit:NO];
     self.webview.scrollView.bounces = NO;
-    
+    self.webview.delegate = self;
     //Load request on mainWebView
     [self.webview loadRequest:request];
 }
@@ -58,6 +59,30 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)openDetailViewControllerWithUrlString:(NSString *)url {
+    
+    self.urlString = url;
+    [self performSegueWithIdentifier:@"DetailComerc" sender:self];
+}
+
+#pragma mark - Segues
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+
+        ComercDetailViewController *detailVC = (ComercDetailViewController *) [segue destinationViewController];
+        detailVC.hidesBottomBarWhenPushed = YES;
+        [detailVC setLocalUrl:self.urlString];
+    
+    
+}
+
+#pragma mark - Overriden methods
+
+- (void)pushURLOnViewController:(NSString*)urlToLoad{
+    [self openDetailViewControllerWithUrlString:urlToLoad];
 }
 
 @end

@@ -84,49 +84,11 @@ var comercController = function (){
 		return dist
 	}
 	
-	function onCommercCellClick( cellInfo) {
-		localStorage.setItem( K_COMERC_DETAIL_OBJECT, JSON.stringify( disclaimerInfo ));
+	function onBuyClick( cellInfo) {
+
 		window.location("push:"+"ComercDetail");
 	}
 
-    //--------------------------------------------------------------
-    // Rest callbacks
-    //--------------------------------------------------------------
-
-    function onListReceived(data, statusCode){        
-        if (data) {          
-	      var length = data['data'].length;
-
-	      if ( length > 0){
-			for(var it = 0; it < length; ++it){
-	        	var oferta = data['data'][it];
-			  	restConsumer.getComerceDetail(oferta,onDetailReceived,onDetailError);
-	          	
-	        }
-		  }
-        } 
-
-        utils.hideActivityView();
-    }
-
-    function onListError(){
-        utils.showAlertCallWithTitleAndMessage(L.get('_connectionError'),L.get('_checkNetworkSettings'));
-        utils.hideActivityView();
-    }
-
-	function onDetailReceived(data, statusCode, commercID){        
-        if (data) {          
-			data.commercID = commercID;
-			$("#near_list").append( setupCell(data) );
-        } 
-
-        utils.hideActivityView();
-    }
-
-    function onDetailError(){
-        utils.showAlertCallWithTitleAndMessage(L.get('_connectionError'),L.get('_checkNetworkSettings'));
-        utils.hideActivityView();
-    }
 
     //Functions or variables returned here will be public (accessing like comercController.viewLoaded())
     return {
