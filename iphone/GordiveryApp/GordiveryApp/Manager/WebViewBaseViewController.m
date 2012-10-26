@@ -71,6 +71,10 @@
             [self openWeb:actionString];
             break;
             
+        case ActionCloseModal:
+            [self closeModal:actionString];
+            break;
+            
         case ActionDefault:
             //do nothing, just forward req
             res = YES;
@@ -195,6 +199,11 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlToLoad]];
 }
 
+- (void)closeModal:(NSString*)actionStr{
+    
+    [self closeModal];
+}
+
 #pragma mark - Methods to override
 
 - (void)pushURLOnViewController:(NSString*)urlToPush{
@@ -206,6 +215,10 @@
 }
 
 - (void)openDatePickerWithJSMethod:(NSString*)methodName{
+    //Override on children
+}
+
+- (void)closeModal{
     //Override on children
 }
 

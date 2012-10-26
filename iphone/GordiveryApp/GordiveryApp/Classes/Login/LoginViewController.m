@@ -66,4 +66,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Overriden methods
+
+- (void)closeModal {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end
