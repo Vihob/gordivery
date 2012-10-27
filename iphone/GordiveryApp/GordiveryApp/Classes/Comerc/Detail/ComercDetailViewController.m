@@ -7,6 +7,8 @@
 //
 
 #import "ComercDetailViewController.h"
+#import "Defines.h"
+#import "TransactionViewController.h"
 
 @interface ComercDetailViewController ()
 
@@ -63,6 +65,27 @@
 
 - (void)callViewWillAppearOnHTML {
     [self.webview stringByEvaluatingJavaScriptFromString:@"ComercController.viewWillAppear();"];
+}
+
+#pragma mark - Private Methods
+
+- (void)openTransactionsViewControllerWithUrlString:(NSString *)url {
+    
+    self.urlString = url;
+    [self performSegueWithIdentifier:k_TransactionViewModal sender:self];
+    
+}
+
+#pragma mark - Segues
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {  
+    
+}
+
+#pragma mark - Overriden methods
+
+- (void)pushURLOnViewController:(NSString*)urlToLoad{
+    [self openTransactionsViewControllerWithUrlString:urlToLoad];
 }
 
 

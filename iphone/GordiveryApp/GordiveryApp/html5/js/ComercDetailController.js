@@ -40,14 +40,11 @@ var comercDetailController = function (){
     }
 
 	
-	function onBuyClick( cellInfo) {
-    localStorage.setItem( k_COMERC_IDENT , cellInfo.comercInfo.commercID );
-		window.location("push:"+"TransactionView");
-	}
-	
 	function loadDetail() {
 
     $("#detail_logo_name").html(comercInfo.data.publicName);
+
+    $("#link_comerc_btn").click( function(){ onBuyClick() } );
 
 		if (comercInfo.data.address != null) {
 			$("#detail_location_adress").html(comercInfo.data.address.street +","+ comercInfo.data.address.number);
@@ -63,6 +60,11 @@ var comercDetailController = function (){
 	$('#detail_location_map').attr('style', 'background:url('+mapUrl+') center center no-repeat');
 
 	}
+
+  function onBuyClick() {
+    localStorage.setItem( k_COMERC_IDENT , comercInfo.commercID );
+    window.location = "push:"+"TransactionView";
+  }
 
 
     //Functions or variables returned here will be public (accessing like comercController.viewLoaded())
