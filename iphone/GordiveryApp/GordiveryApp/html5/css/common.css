@@ -596,7 +596,21 @@ PROFILE
 	line-height: 50px;
 	border-bottom: 1px solid #ccc;
 	color: #999;
+	/*color: #268FD9;*/
 }
+
+
+.list_tick{
+	width: 35px;
+	height: 35px;
+	background: url('../imgs/tick.png') no-repeat center center;
+	background-size: contain;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	display: block; 
+}
+
 
 .pro_list_item:last-child{
 	border:none;
@@ -732,13 +746,13 @@ RANKING
 }
 
 .ranking_user_icon{
-	width: 25px;
-	height: 25px;
+	width: 22px;
+	height: 22px;
 	position: absolute;
 	background: transparent url('../imgs/rank_user_icon.png') no-repeat center center;
 	background-size: contain;
-	left: 5px;
-	top: 10px;
+	left: 4px;
+	top: 13px;
 }
 
 /*******************************************************************
