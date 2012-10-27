@@ -110,8 +110,8 @@
 - (void)navigationBarCustomizeAppearance
 {
     // Set the background image for *all* UINavigationBars
-    [[UINavigationBar appearance] setBackgroundImage:[[UIImage imageNamed:@"comun_navigation.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)]
-                                       forBarMetrics:UIBarMetricsDefault];
+    /*[[UINavigationBar appearance] setBackgroundImage:[[UIImage imageNamed:@"comun_navigation.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)]
+                                       forBarMetrics:UIBarMetricsDefault];*/
     
     // Customize the title text for *all* UINavigationBars
     [[UINavigationBar appearance] setTitleTextAttributes:
@@ -121,8 +121,6 @@
       [NSValue valueWithUIOffset:UIOffsetMake(0,0)], UITextAttributeTextShadowOffset,
       k_NAV_BAR_FONT, UITextAttributeFont,
       nil]];
-    
-    [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:5 forBarMetrics:UIBarMetricsDefault];
     
     //Set tintColor
     [[UINavigationBar appearance] setTintColor:k_NAV_BAR_COLOR];

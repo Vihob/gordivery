@@ -27,9 +27,7 @@ var comercController = function (){
 
     var viewWillAppear = function(){
 
-
        localStorage.setItem( k_USER_LOGIN_TOKEN, "608-b0cc-ac39ede03a74" );
-
 
         utils.showActivityView();
         restConsumer.getComerces(41.402391,2.194765,onListReceived,onListError);

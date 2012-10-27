@@ -11,7 +11,7 @@
 
 //Global Colors
 #define k_TAB_BAR_COLOR [UIColor colorWithRed:41/255.0 green:86/255.0 blue:129/255.0 alpha:1]
-#define k_NAV_BAR_COLOR [UIColor colorWithRed:41/255.0 green:86/255.0 blue:129/255.0 alpha:1]
+#define k_NAV_BAR_COLOR [UIColor colorWithRed:0/255.0 green:120/255.0 blue:192/255.0 alpha:1]
 #define k_TOOL_BAR_COLOR [UIColor colorWithRed:41/255.0 green:86/255.0 blue:129/255.0 alpha:1]
 
 //Global Fonts
