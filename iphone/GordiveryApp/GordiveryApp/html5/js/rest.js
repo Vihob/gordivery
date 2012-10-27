@@ -22,7 +22,6 @@ Dependencies:
 	var kGetCreditCard = "operations/card/";
 	
 	var kDoPayment = "operations/payment/"
-	GET ../payment/{id_card}/code
 
 	var k_TimeOut = 10;
 	var k_LongTimeOut = 25;
@@ -74,7 +73,7 @@ Dependencies:
 	            success : addIDToSuccess,
 	            error : error
 	        });
-			function addIDToSuccess {
+			function addIDToSuccess() {
 				success(success,error,idComerce);
 			}
 		},
@@ -154,7 +153,7 @@ Dependencies:
 		askPayment: function(comercId, success, error) {
 			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
 
-			var url = kBaseAPIURL + accessToken+"/"+kGetCreditCard+creditID+"/status";
+			var url = kBaseAPIURL + accessToken+"/"+kGetCreditCard+comercId+"/status";
 			var type = 'GET';
 			var data = '{"code":"80808-23123-182312","value": 150}'
 			data.code = "80808-23123-182312";

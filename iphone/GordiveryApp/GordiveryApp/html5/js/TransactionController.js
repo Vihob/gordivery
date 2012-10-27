@@ -6,6 +6,7 @@
 var transactionController = function (){
 	
 	var comercId;
+  var paymentCode;
 
     var viewLoaded = function(){
 
@@ -34,7 +35,7 @@ var transactionController = function (){
 
       setupView();
 
-      //restConsumer.getTransactionsList(comercId,onPayTokenReceived,onPayTokenError);
+      restConsumer.askPayment(comercId,onPayTokenReceived,onPayTokenError);
     }
 
     function loadStoredData(){
@@ -46,19 +47,49 @@ var transactionController = function (){
       //Setup initial view and buttons
     }
 
+    function onCancelClick() {
+      window.location = "closeModal:";
+    }
+
+    function onAcceptPaymentClick() {
+
+      var creditCard = localStorage.getItem( k_CREDIT_CARD_SELECTED );
+
+      //Call doPayment service
+      restConsumer.doPayment(paymentCode,creditCard,onAcceptPayDone,onAcceptPayError);
+    }
+
     //--------------------------------------------------------------
     // Rest callbacks
     //--------------------------------------------------------------
 
     function onPayTokenReceived(data, statusCode){        
         if (data) {          
-           //TODO: call to pay? waiting for reciving pay?
+           //Show value
+           //data.value
+
+           //Save paymentCode
+           paymentCode = data.code;
         } 
 
         utils.hideActivityView();
     }
 
     function onPayTokenError(){
+        utils.showAlertCallWithTitleAndMessage(L.get('_connectionError'),L.get('_checkNetworkSettings'));
+        utils.hideActivityView();
+    }
+
+
+    function onAcceptPayDone(data, statusCode){        
+        if (data) {          
+           window.location = "push:"+"TransactionCompleteView";
+        } 
+
+        utils.hideActivityView();
+    }
+
+    function onAcceptPayError(){
         utils.showAlertCallWithTitleAndMessage(L.get('_connectionError'),L.get('_checkNetworkSettings'));
         utils.hideActivityView();
     }
