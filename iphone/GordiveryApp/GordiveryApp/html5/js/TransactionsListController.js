@@ -37,21 +37,42 @@ var transactionsListController = function (){
     //--------------------------------------------------------------
     // Private methods
     //--------------------------------------------------------------
-    function setupCell( cellInfo )
-    {
-	
-	  var cell = $('<li class="man_det_list_item" id="man_det_list_item">');
 
-	  /*var img = $("<div class=\"near_li_img\" id=\"near_li_img\"><img src=\"../imgs/starbucks_cafe.png\"></div>");
-      var comercName = $("<div class=\"near_li_name\">" + cellInfo.data.publicName + "</div>"); 
-	  var address = "";
-      if ( cellInfo.data.address != null ) {
-		var address = cellInfo.data.address.street +","+ cellInfo.data.address.number;
-	  }
-      var addressLabel = $("<div class=\"near_li_description\">" + address + "</div>");
-	  var distance = lineDistance(41.402391,2.194765,cellInfo.data.location[0],cellInfo.data.location[1]);
-	  distance = parseFloat(distance)
-      var distanceLabel = $("<div class=\"near_li_distance\"> "+distance.toFixed(0)+ "m" + "</div>");*/
+    function setupView (view_info) {
+
+      var header = $('<li class="man_detail_header" id="man_detail_header"></li>');
+
+      var headBox = $('<div class="man_det_head_box" id="man_det_head_box"></div>');
+      var icon = $('<div class="man_det_box_icon" id="man_det_box_icon"></div>');
+      var title = $('<div class="man_det_box_title" id="man_det_box_title">'+L.get('_gastosAcumulados')+'</div>');
+      var subtitle = $('<div class="man_det_box_subtitle" id="man_det_box_subtitle">'+view_info.title+'</div>'); 
+      var amount = $('<div class="man_det_box_num" id="man_det_box_num">'+view_info.amount+'</div>');
+      headBox.append(icon);
+      headBox.append(title);
+      headBox.append(subtitle);
+      headBox.append(amount);
+
+      header.append(headBox);
+
+      $("#man_detail_list").append(header);
+
+      for (var i=0; i<view_info.list.length; i++){
+        var cellInfo = view_info.list[i];
+        $("#man_detail_list").append( setupCell(cellInfo) );
+      }
+
+    }
+
+    function setupCell( cellInfo ){
+	
+  	  var cell = $('<li class="man_det_list_item" id="man_det_list_item"></li>');
+
+      var date = $('<div class="man_det_li_date" id="man_det_li_date" >'+cellInfo.date+'</div>');
+      var name = $('<div class="man_det_li_name" id="man_det_li_name">'+cellInfo.name+'</div>');
+      var num = $('<div class="man_det_li_num" id="man_det_li_num" >'+cellInfo.amoun+'</div>');
+      var points = $('<div class="man_det_li_points" id="man_det_li_points" >'+cellInfo.points+' '+L.get('_puntos')+'</div>');
+
+      cell.append(date).append(name).append(num).append(points);
 
       return cell;
     }
@@ -62,7 +83,7 @@ var transactionsListController = function (){
 
     function onListReceived(data, statusCode){        
         if (data) {          
-	         setupCell(data);
+	         setupView(data);
         } 
 
         utils.hideActivityView();

@@ -16,7 +16,7 @@ Dependencies:
 	var kDoLogin = kBaseAPIURL+"/access/login";
 	var kGetCommerces = "operations/commerce/search/near";
 	var kGetCommerceDetail = "operations/commerce/";
-	var kGetTransactionsList = "";
+	var kGetTransactionsList = "https://dl.dropbox.com/u/30237644/FinApps/categories_";
 
 	var k_TimeOut = 10;
 	var k_LongTimeOut = 25;
@@ -73,7 +73,7 @@ Dependencies:
 
 		getTransactionsList: function(categoryId, success, error){
 
-			var url = kGetTransactionsList+categoryId;
+			var url = kGetTransactionsList+categoryId+'.json';
 			var type = 'GET';
 			
 			// Your code here
