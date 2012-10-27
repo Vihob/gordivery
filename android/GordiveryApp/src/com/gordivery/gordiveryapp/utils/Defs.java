@@ -8,6 +8,7 @@ public class Defs {
 	public static final String managementUrl = "file:///android_asset/html5/html/ManagementView.html";
 	public static final String profileUrl = "file:///android_asset/html5/html/ProfileView.html";
 	public static final String rankingUrl = "file:///android_asset/html5/html/RankingView.html";
+	public static final String LoginUrl = "file:///android_asset/html5/html/LoginView.html";
 	
 	
 	//Javascript code on ShowingView
@@ -15,6 +16,10 @@ public class Defs {
 	public static final String managementJS = "managementController.viewWillAppear();";
 	public static final String profileJS = "profileController.viewWillAppear();";
 	public static final String rankingJS = "rankingController.viewWillAppear();";
+	public static final String loginJS = "loginController.viewWillAppear();";
+	
+	//Results
+	public static final int LoginActivity = 100;
 	
 
 	//Activities request ids
@@ -23,4 +28,8 @@ public class Defs {
 	public static final int actionSend = 4;  		//Send email activity
 	public static final int externalBrowser = 5;  	//Open external browser
 	public static final int actionMap = 6;
+	
+	//Activities result codes
+	public static final int resultCloseApp = 1000;
+	public static final int resultGoHome = 1001;
 }

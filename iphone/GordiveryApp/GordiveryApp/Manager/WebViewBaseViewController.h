@@ -16,7 +16,8 @@ typedef enum{
     ActionShowLoading,
     ActionHideLoading,
     ActionDatePicker,
-    ActionWeb
+    ActionWeb,
+    ActionCloseModal
 } Action;
 
 @interface WebViewBaseViewController : UIViewController <UIWebViewDelegate>

@@ -10,10 +10,12 @@ Dependencies:
 	//Dropbox versions - Requires a json inside Dropbox (rosa@mobivery.com account) public folder.
 	var dropboxJsons = false;	//Base and Domains
 	
-	var kBaseAPIURL = "www.finapps.services/";
+	var kBaseAPIURL = "http://finappsapi.bdigital.org/api/2012/5108b053ed/";
 
 	// Application URLS
-	var kGetCommerces = "https://"+kBaseAPIURL+"...";
+	var kDoLogin = kBaseAPIURL+"/access/login";
+	var kGetCommerces = "operations/commerce/search/near";
+	var kGetCommerceDetail = "operations/commerce/";
 
 	var k_TimeOut = 10;
 	var k_LongTimeOut = 25;
@@ -23,15 +25,69 @@ Dependencies:
 	var kMaxResultsPerPage = 20;     /// Set the max results per page on search offers
 
 
-	//*******************************************************
+	//*******************************************************/
 	//	PRIVATE FUNCTIONS
-	//*******************************************************
+	//*******************************************************/
 
 	//CLASSES
 	var restConsumer = {
 
-		//TODO
-		//Implements services...
+		getComerces : function(lat,lon, success, error){
+
+			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
+			accesToken = "608-b0cc-ac39ede03a74";
+			var url = kBaseAPIURL + accesToken+"/"+kGetCommerces+"?lat="+lat+"&lng="+lon+"&radius=0.5";
+			var type = 'GET';
+			
+			// Your code here
+	        $.ajax({
+	            //this is a 'cross-origin' domain
+	            url : url,
+	            type : type,
+	            contentType: 'application-json',
+				dataType : 'json',
+	            success : success,
+	            error : error
+	        });
+		},
+		
+		getComerceDetail : function(idComerce, success, error){
+
+			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
+			accesToken = "608-b0cc-ac39ede03a74";
+			var url = kBaseAPIURL + accesToken+"/"+kGetCommerceDetail+idComerce;
+			var type = 'GET';
+			
+			// Your code here
+	        $.ajax({
+	            //this is a 'cross-origin' domain
+	            url : url,
+	            type : type,
+	            contentType: 'application-json',
+				dataType : 'json',
+	            success : success,
+	            error : error
+	        });
+		},
+		
+		doLogin: function(success, error, anUser, aPassword){
+
+			//get base login URL
+			var url = kDoLogin;
+
+			var Authorization = $.base64.encode( anUser+aPassword );
+
+			// Try to open and parse a XML document
+			$.ajax({
+	            url : url,
+	            dataType : 'json',
+	            beforeSend : function(xhr){
+	                xhr.setRequestHeader('Authorization',Authorization);
+	            },
+	            success : success,
+	            error : error
+        	});
+		},
 		
 		/**
 		* Indicates whether rest consumer is in fake mode or not.
@@ -39,6 +95,8 @@ Dependencies:
 		fakeMode : function(){
 			return dropboxJsons;
 		}
+
+
 	};
 
 	//Exposing restConsumer

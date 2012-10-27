@@ -130,17 +130,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class string {
         public static final int alternate_title=0x7f070001;
         public static final int app_name=0x7f070000;
-        public static final int getting_location=0x7f070014;
+        public static final int getting_location=0x7f070015;
         public static final int go_back=0x7f07000f;
         public static final int go_forward=0x7f07000e;
         /**  Alerts 
          */
-        public static final int loading=0x7f070012;
-        public static final int location_failed=0x7f070015;
+        public static final int loading=0x7f070013;
+        public static final int location_failed=0x7f070016;
+        public static final int login_title=0x7f070012;
         /**  Titles 
          */
         public static final int main_name=0x7f070011;
-        public static final int map_alert_msg=0x7f070013;
+        public static final int map_alert_msg=0x7f070014;
         public static final int menu_refresh=0x7f070003;
         public static final int menu_search=0x7f070004;
         public static final int menu_share=0x7f070005;
