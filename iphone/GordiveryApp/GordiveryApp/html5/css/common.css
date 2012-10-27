@@ -1010,10 +1010,18 @@ PAYMENTS
 	height: auto;
 	position: relative;
 	margin: 0 auto;
-	padding-top: 40px;
+	padding-top: 10px;
+	margin-bottom: 20px;
 }
  
- 
+#table_text{
+	width: 90%;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 25px;
+} 
+
 .tags_list{
 	width: 100%;
 	height: auto;
@@ -1024,6 +1032,7 @@ PAYMENTS
 	margin-bottom: 25px;
  
 }
+ 
  
  
 .tags_list_item{
