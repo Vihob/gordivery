@@ -85,17 +85,24 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int pager_indicator_style=0x7f020022;
         public static final int splash=0x7f020023;
         public static final int tab_background_style=0x7f020024;
-        public static final int tab_banking_operations_style=0x7f020025;
-        public static final int tab_contacts_style=0x7f020026;
-        public static final int tab_disclaimer_style=0x7f020027;
-        public static final int tab_offices_style=0x7f020028;
-        public static final int tab_public_web_style=0x7f020029;
-        public static final int web_btn_refresh=0x7f02002a;
-        public static final int web_toolbar_background=0x7f02002b;
-        public static final int web_toolbar_icon_before=0x7f02002c;
-        public static final int web_toolbar_icon_before_off=0x7f02002d;
-        public static final int web_toolbar_icon_next=0x7f02002e;
-        public static final int web_toolbar_icon_next_off=0x7f02002f;
+        public static final int tab_comerc_style=0x7f020025;
+        public static final int tab_cuentas_style=0x7f020026;
+        public static final int tab_ranking_style=0x7f020027;
+        public static final int tab_user_style=0x7f020028;
+        public static final int tabbar_icon_comercios=0x7f020029;
+        public static final int tabbar_icon_comercios_=0x7f02002a;
+        public static final int tabbar_icon_cuentas=0x7f02002b;
+        public static final int tabbar_icon_cuentas_=0x7f02002c;
+        public static final int tabbar_icon_ranking=0x7f02002d;
+        public static final int tabbar_icon_ranking_=0x7f02002e;
+        public static final int tabbar_icon_user=0x7f02002f;
+        public static final int tabbar_icon_user_=0x7f020030;
+        public static final int web_btn_refresh=0x7f020031;
+        public static final int web_toolbar_background=0x7f020032;
+        public static final int web_toolbar_icon_before=0x7f020033;
+        public static final int web_toolbar_icon_before_off=0x7f020034;
+        public static final int web_toolbar_icon_next=0x7f020035;
+        public static final int web_toolbar_icon_next_off=0x7f020036;
     }
     public static final class id {
         public static final int actionbar_compat=0x7f060000;

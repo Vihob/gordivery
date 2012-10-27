@@ -95,7 +95,7 @@ public class TabManagerApp extends FragmentActivity {
 		String tabText = getString(R.string.tab_comerc);
 		View tabIndicator = LayoutInflater.from(this).inflate(
 				R.layout.tabmanagercontent, null);
-		tabIndicator.setBackgroundResource(R.drawable.tab_banking_operations_style);
+		tabIndicator.setBackgroundResource(R.drawable.tab_comerc_style);
 		((TextView) tabIndicator.findViewById(R.id.tabmanagercontent_title))
 				.setText(tabText);
 		return mTabHost.newTabSpec(tabText).setIndicator(tabIndicator);
@@ -105,7 +105,7 @@ public class TabManagerApp extends FragmentActivity {
 		String tabText = getString(R.string.tab_management);
 		View tabIndicator = LayoutInflater.from(this).inflate(
 				R.layout.tabmanagercontent, null);
-		tabIndicator.setBackgroundResource(R.drawable.tab_offices_style);
+		tabIndicator.setBackgroundResource(R.drawable.tab_cuentas_style);
 		((TextView) tabIndicator.findViewById(R.id.tabmanagercontent_title))
 				.setText(tabText);
 		return mTabHost.newTabSpec(tabText).setIndicator(tabIndicator);
@@ -116,7 +116,7 @@ public class TabManagerApp extends FragmentActivity {
 		String tabText = getString(R.string.tab_ranking);
 		View tabIndicator = LayoutInflater.from(this).inflate(
 				R.layout.tabmanagercontent, null);
-		tabIndicator.setBackgroundResource(R.drawable.tab_contacts_style);
+		tabIndicator.setBackgroundResource(R.drawable.tab_ranking_style);
 		((TextView) tabIndicator.findViewById(R.id.tabmanagercontent_title))
 				.setText(tabText);
 		return mTabHost.newTabSpec(tabText).setIndicator(tabIndicator);
@@ -126,7 +126,7 @@ public class TabManagerApp extends FragmentActivity {
 		String tabText = getString(R.string.tab_profile);
 		View tabIndicator = LayoutInflater.from(this).inflate(
 				R.layout.tabmanagercontent, null);
-		tabIndicator.setBackgroundResource(R.drawable.tab_disclaimer_style);
+		tabIndicator.setBackgroundResource(R.drawable.tab_user_style);
 		((TextView) tabIndicator.findViewById(R.id.tabmanagercontent_title))
 				.setText(tabText);
 		return mTabHost.newTabSpec(tabText).setIndicator(tabIndicator);
