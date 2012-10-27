@@ -863,7 +863,7 @@ PAYMENTS
 	height: 220px;
 	position: absolute;
 	background: white;
-	display: hidden;
+	display: block;
 	left: 50%;
 	margin-left: -38%;
 	top: 50px;
@@ -912,6 +912,7 @@ PAYMENTS
 .pay_btns { 
 	width: 75%;
 	height: auto;
+	display: none;
 	position: relative;
 	margin: 0 auto;
 	margin-top: 55px;
@@ -962,125 +963,3 @@ PAYMENTS
 .pay_accept:active{
 	background-image: -webkit-linear-gradient(top, rgba(78,163,251,.7), rgba(3,97,153,.7));
 }
-
-
-
-.tags_wrapper{
-	width: 90%;
-	height: auto;
-	position: relative;
-	margin: 0 auto;
-	padding-top: 40px;
-}
-
-
-.tags_list{
-	width: 100%;
-	height: auto;
-	background: white;
-	border-radius: 3px;
-	box-shadow: 0px 1px 2px rgba(0,0,0,.1);
-	border: 1px solid #ccc;
-	margin-bottom: 25px;
-
-}
-
-
-.tags_list_item{
-	width: 84%;
-	height: 50px;
-	position: relative;
-	padding-left: 16%;
-	line-height: 50px;
-	border-bottom: 1px solid #ccc;
-	color: #999;
-	/*color: #268FD9;*/
-	
-}
-
-#gasolina_tag{
-	color: #268FD9;
-}
-
-.tags_add{
-	width: 84%;
-	height: 50px;
-	position: relative;
-	background: white;
-	border-radius: 3px;
-	box-shadow: 0px 1px 2px rgba(0,0,0,.1);
-	border: 1px solid #ccc;
-	margin-bottom: 25px;
-	padding-left: 16%;
-	line-height: 50px;
-	color: #999;
-	
-}
-
-.tags_save_btn{
-	width: 60%;
-	height: 45px;
-	position: relative;
-	margin: 0 auto;
-	margin-top: 8px;
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	text-shadow: 0 -1px 1px rgba(0,0,0,.5);
-	text-align: center;
-	line-height: 45px;
-	border: 1px solid rgba(1, 3, 50, .45);
-	border-radius: 5px;
-	background: black;
-	background-image: -webkit-linear-gradient(top, rgb(78,163,251), rgb(3,97,153));
-	box-shadow: 0px 2px 1px #fff;
-	
-}
-
-.tags_save_btn:active{
-	background-image: -webkit-linear-gradient(top, rgba(78,163,251,.7), rgba(3,97,153,.7));
-}
-
-
-.tag_icon{
-	width: 35px;
-	height: 35px;
-	position: absolute;
-	background: red;
-	background-size: contain;
-	left: 5px;
-	top: 8px;
-}
-
-#gas{
-	background: url('../imgs/gasolina.png') no-repeat center center;
-}
-
-#rop{
-	background: url('../imgs/ropa.png') no-repeat center center;
-}
-
-#mus{
-	background: url('../imgs/musica.png') no-repeat center center;
-}
-
-#res{
-	background: url('../imgs/restaurantes.png') no-repeat center center;
-}
-
-#alq{
-	background: url('../imgs/alquiler.png') no-repeat center center;
-}
-
-.more_icon{
-	width: 35px;
-	height: 35px;
-	background-size: contain;
-	position: absolute;
-	right: 10px;
-	top: 8px;
-	display: block;
-	background: url('../imgs/more_btn.png') no-repeat center center;	
-}
-
-
