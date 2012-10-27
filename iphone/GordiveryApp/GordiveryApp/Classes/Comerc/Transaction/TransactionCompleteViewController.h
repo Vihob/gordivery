@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "WebViewBaseViewController.h"
 
-@interface TransactionCompleteViewController : WebViewBaseViewController
+@interface TransactionCompleteViewController : WebViewBaseViewController <UIWebViewDelegate>
+
+@property (nonatomic, weak) IBOutlet UIWebView *webview;
 
 @end
