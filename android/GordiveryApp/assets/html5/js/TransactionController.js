@@ -16,12 +16,13 @@ var transactionController = function (){
         //Select spanish as default language
         L.setCurrentLanguage('es'); 
 
-        //Load disclaimerInfo stored data
+        //Load stored data
         loadStoredData();
 
+		setupView();
         //Initialize mainController
         transactionController.viewWillAppear();
-
+		
       },
       function(){
         //DO NOTHING
@@ -33,7 +34,7 @@ var transactionController = function (){
 
       utils.showActivityView();
 
-      setupView();
+
 
       restConsumer.askPayment(comercId,onPayTokenReceived,onPayTokenError);
     }
@@ -45,6 +46,9 @@ var transactionController = function (){
 
     function setupView () {
       //Setup initial view and buttons
+	var payInfo = $("#pay_info")
+		payInfo.attr('style', 'display:hidden');
+		$("#pay_btns").attr('style', 'display:hidden');
     }
 
     function onCancelClick() {
@@ -65,9 +69,9 @@ var transactionController = function (){
 
     function onPayTokenReceived(data, statusCode){        
         if (data) {          
-           //Show value
-           //data.value
-
+			$("#pay_info").attr('style', 'display:block');
+			$("#pay_btns").attr('style', 'display:block');
+			$("#pay_loader").attr('style', 'display:hidden');
            //Save paymentCode
            paymentCode = data.code;
         } 
