@@ -52,21 +52,12 @@ var comercDetailController = function (){
 	}
 	
 	function loadMap () {
-		    var position = new google.maps.LatLng(comercInfo.data.location[0], comercInfo.data.location[1]);
-		    var myOptions = {
-		      zoom: 10,
-		      center: position,
-		      mapTypeId: google.maps.MapTypeId.ROADMAP
-		    };
-		    var map = new google.maps.Map(
-		        document.getElementById("map_canvas"),
-		        myOptions);
+      var latitude = comercInfo.data.location[0];
+      var longitude = comercInfo.data.location[1];
+      var coords = (latitude + ',' + longitude);
+      var mapUrl = 'http://maps.googleapis.com/maps/api/staticmap?center='+latitude+','+longitude+'&zoom=15&size=600x600&maptype=roadmap&markers=color:blue%7Clabel:%7C'+latitude+','+longitude+'&sensor=true';
 
-		    var marker = new google.maps.Marker({
-		        position: position,
-		        map: map,
-		        title:""
-		    });
+	$('#detail_location_map').attr('style', 'background:url('+mapUrl+') center center no-repeat');
 	}
 
 
