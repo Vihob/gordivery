@@ -158,7 +158,7 @@ Dependencies:
 		
 		askPayment: function(comercId, success, error) {
 			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
-			sleep(5000);
+			sleep(2000);
 			var url = kBaseAPIURL + accessToken+"/"+kGetCreditCard+comercId+"/status";
 			var type = 'GET';
 			var data = '{"code":"80808-23123-182312","value": 150}'
