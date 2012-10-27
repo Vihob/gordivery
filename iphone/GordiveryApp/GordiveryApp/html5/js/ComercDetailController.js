@@ -5,7 +5,7 @@
 */
 var comercDetailController = function (){
 	
-	var comercList = [];
+	var comercInfo;
 
     var viewLoaded = function(){
 
@@ -46,6 +46,8 @@ var comercDetailController = function (){
 	}
 	
 	function loadDetail() {
+
+    $("#detail_logo_name").html(comercInfo.data.publicName);
 
 		if (comercInfo.data.address != null) {
 			$("#detail_location_adress").html(comercInfo.data.address.street +","+ comercInfo.data.address.number);
