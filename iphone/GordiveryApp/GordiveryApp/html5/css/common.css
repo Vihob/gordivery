@@ -657,6 +657,8 @@ RANKING
 	padding-left: 8%;
 }
 
+
+
 .ranking_name{
 	width: 60%;
 	height: auto;
@@ -722,6 +724,11 @@ RANKING
 .ranking_icon_3{
 	background: url('../imgs/bronze.png') no-repeat center center;
 	background-size: contain;
+}
+
+
+#ranking_list_user .ranking_name, #ranking_list_user .ranking_points{
+	color: #268FD9;	
 }
 
 /*******************************************************************
