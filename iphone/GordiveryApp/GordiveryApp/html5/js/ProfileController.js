@@ -33,15 +33,32 @@ var profileController = function (){
     function setupCreditCardCell( creditCardInfo )
     {
 
-	  var cell = $("<li class=pro_list_item id="+creditCardInfo.data.id+" ></li>");
+	  var cell = $("<li class=pro_list_item id="+creditCardInfo.data.id+"></li>");
 		cell.html(creditCardInfo.data.number)
       cell.click( function(){ onCreditCardClicked( creditCardInfo ) } );
-
+		var check = $('<div class="list_tick" id="tick'+creditCardInfo.data.id+'"></div>'); 
+		cell.append(check);
+		var previousSelected = localStorage.getItem( k_CREDIT_CARD_SELECTED );
+		if (creditCardInfo.data.id != previousSelected) {
+			check.css({"display":"none"});
+			cell.css({"color":"#999"});
+		} else {
+			check.css({"display":"block"});
+			cell.css({"color":"#268FD9"});
+		}
       return cell;
     }
 
 	function onCreditCardClicked ( creditCardInfo) {
-		
+		var previousSelected = localStorage.getItem( k_CREDIT_CARD_SELECTED );
+		if (creditCardInfo.data.id != previousSelected) {
+			$("#tick"+creditCardInfo.data.id).attr('style', 'display:block');
+			$("#tick"+previousSelected).attr('style', 'display:none');
+			
+			$("#"+creditCardInfo.data.id).attr('style', 'color: #268FD9');
+			$("#"+previousSelected).attr('style', 'color: #999');
+			localStorage.setItem( k_CREDIT_CARD_SELECTED, creditCardInfo.data.id);
+		}
 	}
 
     //--------------------------------------------------------------
@@ -68,7 +85,7 @@ var profileController = function (){
     function onCreditCardReceived(data, statusCode){        
         if (data) { 
 		
-			var creditSelected = utils.retriveJSONParseWithLocalStorageKey( k_CREDIT_CARD_SELECTED );
+			var creditSelected = localStorage.getItem(k_CREDIT_CARD_SELECTED);
 	        if (!utils.isNotEmptyLocalStorageStringKey(creditSelected)) {
 				localStorage.setItem( k_CREDIT_CARD_SELECTED, data.data.id);
 			}
