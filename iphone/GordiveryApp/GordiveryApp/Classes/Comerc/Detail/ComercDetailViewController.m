@@ -45,7 +45,7 @@
 - (void)configureView {
     
     //Load path for init_view.html
-    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"ComercView" ofType:@"html" inDirectory:@"html5/html"];
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"ComercDetail" ofType:@"html" inDirectory:@"html5/html"];
     NSURL *fileURL = [NSURL fileURLWithPath:htmlFile];
     NSURLRequest *request = [NSURLRequest requestWithURL:fileURL];
     

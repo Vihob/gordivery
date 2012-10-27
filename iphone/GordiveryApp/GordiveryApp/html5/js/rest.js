@@ -6,9 +6,6 @@ Dependencies:
 */
 
 (function( window, undefined ) {
-
-	//Dropbox versions - Requires a json inside Dropbox (rosa@mobivery.com account) public folder.
-	var dropboxJsons = false;	//Base and Domains
 	
 	var kBaseAPIURL = "http://finappsapi.bdigital.org/api/2012/5108b053ed/";
 
@@ -65,9 +62,14 @@ Dependencies:
 	            type : type,
 	            contentType: 'application-json',
 				dataType : 'json',
-	            success : success,
+	            success : detailObtained,
 	            error : error
 	        });
+	
+			function detailObtained(data,status) {
+				
+				success (data,status,idComerce)
+			}
 		},
 		
 		doLogin: function(success, error, anUser, aPassword){

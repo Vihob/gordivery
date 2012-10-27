@@ -29,7 +29,7 @@ var comercController = function (){
 
         //Check is user logged
         var user_token = localStorage.getItem( k_USER_LOGIN_TOKEN );
-        if ( utils.isNotEmptyLocalStorageStringKey( user_token ) ) {
+        if (! utils.isNotEmptyLocalStorageStringKey( user_token ) ) {
             utils.showActivityView();
             //Call rest method
 			restConsumer.getComerces(41.402391,2.194765,onListReceived,onListError);
@@ -61,7 +61,7 @@ var comercController = function (){
 
 
       cell.append (img).append(comercName).append(addressLabel).append(distanceLabel);
-      // cell.click( function(){ onCommercCellClick( cellInfo ) } );
+      cell.click( function(){ onCommercCellClick( cellInfo ) } );
 
       return cell;
     }
@@ -82,6 +82,11 @@ var comercController = function (){
 		dist = dist * 1609.344
 
 		return dist
+	}
+	
+	function onCommercCellClick( cellInfo) {
+		localStorage.setItem( K_COMERC_DETAIL_OBJECT, JSON.stringify( cellInfo ));
+		window.location = "push:"+"ComercDetail";
 	}
 
     //--------------------------------------------------------------
@@ -109,9 +114,9 @@ var comercController = function (){
         utils.hideActivityView();
     }
 
-	function onDetailReceived(data, statusCode){        
+	function onDetailReceived(data, statusCode, commercID){        
         if (data) {          
-	
+			data.commercID = commercID;
 			$("#near_list").append( setupCell(data) );
         } 
 

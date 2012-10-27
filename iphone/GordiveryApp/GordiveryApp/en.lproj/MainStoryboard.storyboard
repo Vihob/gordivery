@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hL6-so-YfX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11G56" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hL6-so-YfX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
         <!--Comerc Detail View Controller-->
@@ -11,10 +11,25 @@
                     <view key="view" contentMode="scaleToFill" id="xiF-KK-q53">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdx-fK-vg5">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="B57-fs-UUE" id="YsP-sB-XS0"/>
+                                </connections>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bdx-fK-vg5" firstAttribute="bottom" secondItem="xiF-KK-q53" secondAttribute="bottom" type="default" id="RDu-Uh-L7c"/>
+                            <constraint firstItem="bdx-fK-vg5" firstAttribute="leading" secondItem="xiF-KK-q53" secondAttribute="leading" type="default" id="Yha-aT-egY"/>
+                            <constraint firstItem="bdx-fK-vg5" firstAttribute="top" secondItem="xiF-KK-q53" secondAttribute="top" type="default" id="zII-7Q-YmR"/>
+                            <constraint firstItem="bdx-fK-vg5" firstAttribute="trailing" secondItem="xiF-KK-q53" secondAttribute="trailing" type="default" id="zQi-97-ciP"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sqI-BI-cZd"/>
                     <connections>
+                        <outlet property="webview" destination="bdx-fK-vg5" id="xhm-9c-1Mj"/>
                         <segue destination="qn9-zp-sZ4" kind="modal" id="Upc-gL-LWT"/>
                     </connections>
                 </viewController>
@@ -64,7 +79,7 @@
                     <connections>
                         <outlet property="webview" destination="v8A-7b-IJn" id="Cu1-5b-wLO"/>
                         <segue destination="IVQ-OW-bvD" kind="push" id="VwB-Zc-GKL"/>
-                        <segue destination="B57-fs-UUE" kind="push" id="kgp-Lc-SzE"/>
+                        <segue destination="B57-fs-UUE" kind="push" identifier="DetailComerc" id="kgp-Lc-SzE"/>
                         <segue destination="pwf-wl-5S6" kind="modal" identifier="LoginModal" id="NAD-tZ-JOk"/>
                     </connections>
                 </viewController>
@@ -431,6 +446,9 @@
         </class>
         <class className="ComercDetailViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ComercDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
         </class>
         <class className="ComercListViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ComercListViewController.h"/>

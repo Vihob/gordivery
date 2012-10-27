@@ -3,9 +3,9 @@
   - jquery-1.8.2.js
   - literals.js
 */
-var comercController = function (){
+var comercDetailController = function (){
 	
-	var comercList = [];
+	var comercInfo;
 
     var viewLoaded = function(){
 
@@ -19,7 +19,7 @@ var comercController = function (){
       loadStoredData();
 
         //Initialize mainController
-        comercController.viewWillAppear();
+        comercDetailController.viewWillAppear();
 
       },
       function(){
@@ -31,6 +31,7 @@ var comercController = function (){
     var viewWillAppear = function(){
 
 		loadDetail();
+		loadMap();
     }
 
     function loadStoredData(){
@@ -45,8 +46,27 @@ var comercController = function (){
 	}
 	
 	function loadDetail() {
-		if (comercInfo.data.address != null)
-		$("#detail_location_adress").innerHTML( comercInfo.data.address.street +","+ comercInfo.data.address.number);
+		if (comercInfo.data.address != null) {
+			$("#detail_location_adress").html(comercInfo.data.address.street +","+ comercInfo.data.address.number);
+		}
+	}
+	
+	function loadMap () {
+		    var position = new google.maps.LatLng(comercInfo.data.location[0], comercInfo.data.location[1]);
+		    var myOptions = {
+		      zoom: 10,
+		      center: position,
+		      mapTypeId: google.maps.MapTypeId.ROADMAP
+		    };
+		    var map = new google.maps.Map(
+		        document.getElementById("map_canvas"),
+		        myOptions);
+
+		    var marker = new google.maps.Marker({
+		        position: position,
+		        map: map,
+		        title:""
+		    });
 	}
 
 

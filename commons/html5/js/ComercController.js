@@ -85,8 +85,8 @@ var comercController = function (){
 	}
 	
 	function onCommercCellClick( cellInfo) {
-		localStorage.setItem( K_COMERC_DETAIL_OBJECT, JSON.stringify( disclaimerInfo ));
-		window.location("push:"+"ComercDetail");
+		localStorage.setItem( K_COMERC_DETAIL_OBJECT, JSON.stringify( cellInfo ));
+		window.location = "push:"+"ComercDetail";
 	}
 
     //--------------------------------------------------------------
