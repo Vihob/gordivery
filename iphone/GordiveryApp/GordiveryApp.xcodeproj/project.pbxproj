@@ -80,7 +80,6 @@
 		E601847C163AEA5100B2869C /* RankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601847B163AEA5100B2869C /* RankingViewController.m */; };
 		E601847F163AEA6800B2869C /* CategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601847E163AEA6800B2869C /* CategoryListViewController.m */; };
 		E6018482163AEA7C00B2869C /* TransactionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018481163AEA7C00B2869C /* TransactionListViewController.m */; };
-		E6018485163AEA9200B2869C /* TransactionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018484163AEA9200B2869C /* TransactionDetailViewController.m */; };
 		E601848D163AF37A00B2869C /* WebViewBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601848C163AF37A00B2869C /* WebViewBaseViewController.m */; };
 		E6018494163AF49B00B2869C /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018490163AF49B00B2869C /* LoadingViewController.m */; };
 		E6018495163AF49B00B2869C /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6018491163AF49B00B2869C /* LoadingViewController.xib */; };
@@ -178,8 +177,6 @@
 		E601847E163AEA6800B2869C /* CategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListViewController.m; sourceTree = "<group>"; };
 		E6018480163AEA7C00B2869C /* TransactionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionListViewController.h; sourceTree = "<group>"; };
 		E6018481163AEA7C00B2869C /* TransactionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionListViewController.m; sourceTree = "<group>"; };
-		E6018483163AEA9200B2869C /* TransactionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionDetailViewController.h; sourceTree = "<group>"; };
-		E6018484163AEA9200B2869C /* TransactionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionDetailViewController.m; sourceTree = "<group>"; };
 		E601848B163AF37A00B2869C /* WebViewBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewBaseViewController.h; sourceTree = "<group>"; };
 		E601848C163AF37A00B2869C /* WebViewBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewBaseViewController.m; sourceTree = "<group>"; };
 		E601848F163AF49B00B2869C /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
@@ -422,8 +419,6 @@
 			children = (
 				E6018480163AEA7C00B2869C /* TransactionListViewController.h */,
 				E6018481163AEA7C00B2869C /* TransactionListViewController.m */,
-				E6018483163AEA9200B2869C /* TransactionDetailViewController.h */,
-				E6018484163AEA9200B2869C /* TransactionDetailViewController.m */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -600,7 +595,6 @@
 				E601847C163AEA5100B2869C /* RankingViewController.m in Sources */,
 				E601847F163AEA6800B2869C /* CategoryListViewController.m in Sources */,
 				E6018482163AEA7C00B2869C /* TransactionListViewController.m in Sources */,
-				E6018485163AEA9200B2869C /* TransactionDetailViewController.m in Sources */,
 				E601848D163AF37A00B2869C /* WebViewBaseViewController.m in Sources */,
 				E6018494163AF49B00B2869C /* LoadingViewController.m in Sources */,
 				E6018496163AF49B00B2869C /* Utils.m in Sources */,

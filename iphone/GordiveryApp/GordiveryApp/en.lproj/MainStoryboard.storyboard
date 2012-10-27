@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11G56" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hL6-so-YfX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hL6-so-YfX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
         <!--Comerc Detail View Controller-->
@@ -246,28 +246,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="9XE-vl-p71"/>
-                    <connections>
-                        <segue destination="gfm-SD-Dz7" kind="push" id="Lmh-1W-eo4"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smb-1x-FFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2203" y="157"/>
-        </scene>
-        <!--Transaction Detail View Controller-->
-        <scene sceneID="MMa-zD-ujt">
-            <objects>
-                <viewController id="gfm-SD-Dz7" customClass="TransactionDetailViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AIG-XR-Ccf">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="feH-Bl-q9R"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oJD-wf-Nm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2799" y="353"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Aer-yF-jiu">
@@ -485,9 +467,6 @@
         </class>
         <class className="TransactionCompleteViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionCompleteViewController.h"/>
-        </class>
-        <class className="TransactionDetailViewController" superclassName="WebViewBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionDetailViewController.h"/>
         </class>
         <class className="TransactionListViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionListViewController.h"/>
