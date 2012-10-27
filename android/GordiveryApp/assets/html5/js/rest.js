@@ -70,10 +70,12 @@ Dependencies:
 	            type : type,
 	            contentType: 'application-json',
 				dataType : 'json',
-	            success : success,
+	            success : addIDToSuccess,
 	            error : error
 	        });
-
+			function addIDToSuccess(data,status) {
+				success(data,status,idComerce);
+			}
 		},
 
 		getTransactionsList: function(categoryId, success, error){
@@ -150,7 +152,7 @@ Dependencies:
 		
 		askPayment: function(comercId, success, error) {
 			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
-
+			window.setTimeout(partB,5000);//Simulate service
 			var url = kBaseAPIURL + accessToken+"/"+kGetCreditCard+comercId+"/status";
 			var type = 'GET';
 			var data = '{"code":"80808-23123-182312","value": 150}'

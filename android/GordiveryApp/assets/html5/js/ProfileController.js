@@ -24,6 +24,7 @@ var profileController = function (){
     }
 
     var viewWillAppear = function(){
+	
         restConsumer.getUserAccount(onAccountReceived,onAccountError);
     }
 
@@ -67,7 +68,6 @@ var profileController = function (){
 
     function onAccountReceived(data, statusCode){        
         if (data) {          
-
          	var cards = data.data.cards;
 
 			for (var it = 0; it < cards.length; ++it) {
