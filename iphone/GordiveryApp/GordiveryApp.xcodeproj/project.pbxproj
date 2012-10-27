@@ -85,6 +85,10 @@
 		E6018495163AF49B00B2869C /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6018491163AF49B00B2869C /* LoadingViewController.xib */; };
 		E6018496163AF49B00B2869C /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E6018493163AF49B00B2869C /* Utils.m */; };
 		E6018498163B141100B2869C /* html5 in Resources */ = {isa = PBXBuildFile; fileRef = E6018497163B140E00B2869C /* html5 */; };
+		E646445D163BB9150028B4DE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E646445B163BB9150028B4DE /* Default.png */; };
+		E646445E163BB9150028B4DE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E646445C163BB9150028B4DE /* Default@2x.png */; };
+		E6464462163BB91B0028B4DE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E6464460163BB91B0028B4DE /* icon.png */; };
+		E6464463163BB91B0028B4DE /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6464461163BB91B0028B4DE /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -185,6 +189,10 @@
 		E6018492163AF49B00B2869C /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		E6018493163AF49B00B2869C /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		E6018497163B140E00B2869C /* html5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html5; sourceTree = "<group>"; };
+		E646445B163BB9150028B4DE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E646445C163BB9150028B4DE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E6464460163BB91B0028B4DE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E6464461163BB91B0028B4DE /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +229,10 @@
 		8558D08A163B661A00547816 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E6464460163BB91B0028B4DE /* icon.png */,
+				E6464461163BB91B0028B4DE /* icon@2x.png */,
+				E646445B163BB9150028B4DE /* Default.png */,
+				E646445C163BB9150028B4DE /* Default@2x.png */,
 				8558D08D163B662600547816 /* comercios_poid_map.png */,
 				8558D08E163B662600547816 /* comercios_poid_map@2x.png */,
 				8558D08F163B662600547816 /* comun_btn_navigation_accept.png */,
@@ -573,6 +585,10 @@
 				8558D0F3163B662600547816 /* tabbar_icon_user_@2x.png in Resources */,
 				8558D0F4163B662600547816 /* tabbar_icon_user.png in Resources */,
 				8558D0F5163B662600547816 /* tabbar_icon_user@2x.png in Resources */,
+				E646445D163BB9150028B4DE /* Default.png in Resources */,
+				E646445E163BB9150028B4DE /* Default@2x.png in Resources */,
+				E6464462163BB91B0028B4DE /* icon.png in Resources */,
+				E6464463163BB91B0028B4DE /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
