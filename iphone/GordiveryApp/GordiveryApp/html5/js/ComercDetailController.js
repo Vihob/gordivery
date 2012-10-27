@@ -3,7 +3,7 @@
   - jquery-1.8.2.js
   - literals.js
 */
-var comercController = function (){
+var comercDetailController = function (){
 	
 	var comercList = [];
 
@@ -19,7 +19,7 @@ var comercController = function (){
       loadStoredData();
 
         //Initialize mainController
-        comercController.viewWillAppear();
+        comercDetailController.viewWillAppear();
 
       },
       function(){
@@ -31,6 +31,7 @@ var comercController = function (){
     var viewWillAppear = function(){
 
 		loadDetail();
+		loadMap();
     }
 
     function loadStoredData(){
