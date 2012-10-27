@@ -382,10 +382,28 @@ MANAGEMENT
 	background: url('../imgs/comun_icon_gasolia.png') no-repeat center center;
 	background-size: contain;
 	right: 10px;
-	top: 10px;
-	
+	top: 10px;	
 }
 
+#manage_box_icon_1{
+	background: url('../imgs/ropa.png')no-repeat center center;
+}
+
+#manage_box_icon_2{
+	background: url('../imgs/alquiler.png')no-repeat center center;
+}
+
+#manage_box_icon_3{
+	background: url('../imgs/gasolina.png')no-repeat center center;
+}
+
+#manage_box_icon_4{
+	background: url('../imgs/restaurantes.png')no-repeat center center;
+}
+
+#manage_box_icon_5{
+	background: url('../imgs/musica.png')no-repeat center center;
+}
 .margin_transparent{
 	width: 100px;
 	height: 30px;
