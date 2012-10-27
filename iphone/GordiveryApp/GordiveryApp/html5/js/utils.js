@@ -174,7 +174,7 @@
     	  mbApi.showLoading(loadingString);
       }
       else{
-    	  // window.location = "showloading:"+loadingString;
+    	  window.location = "showloading:"+loadingString;
       }
     },
     /**
@@ -185,7 +185,7 @@
 	  	    mbApi.hideLoading();
 	    }
 	    else{
-	    	// window.location = "hideloading:nothing";
+	    	window.location = "hideloading:nothing";
 	    }
     },
     /** 
