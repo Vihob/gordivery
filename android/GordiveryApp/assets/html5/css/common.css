@@ -13,6 +13,7 @@
 
 html {
 	height: 100%;
+	background: #E6E5E5;
 } 
 
 body { 
@@ -31,6 +32,8 @@ ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	position: relative;
+	display: block;
 }
 
 label{
@@ -75,7 +78,8 @@ div {
 	width : 100%;
 	height: 100%;
 	display : block;
-	background: #ededed ;
+	background: #E6E5E5;
+	
 }
 
 /*******************************************************************
@@ -97,7 +101,7 @@ COMERC
 	border-top: 1px solid rgb(250,250,255);
 }
 .near_list_element:nth-child(odd){
-	background: rgb(245,245,255);
+	background: rgb(245,245,245);
 }
 
 .near_list_element:nth-child(even){
@@ -135,23 +139,23 @@ COMERC
 } 
 
 .near_li_description { 
-	width: 65%;
-	height: auto;
+	width: 60%;
+	height: 17px;
 	position: absolute;
 	left: 85px;
 	top: 43px;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: normal;
 
 } 
 
 .near_li_distance { 
-	width: 12%;
+	width: 17%;
 	height: auto;
 	position: absolute;
-	right: 10px;
+	right: 12px;
 	top: 43px;
 	text-align: right;
 	font-size: 14px;
@@ -163,7 +167,7 @@ COMERC DETAIL
 .near_detail { 
 	width: 100%;
 	height: auto;
-
+	background: #EDEDED;
 } 
 
 .detail_img { 
@@ -238,9 +242,11 @@ COMERC DETAIL
 
 .detail_location_adress { 
 	width: 100%;
-	height: 45px;
+	min-height: 25px;
+	max-height: 35px;
 	padding-top: 12px;
 	text-align: center;
+	line-height: 15px;
 	color: #333;
 	border-bottom: 1px solid #ccc;
 	background-image: -webkit-linear-gradient(top, rgb(250,250,250), rgb(230,230,230));
@@ -292,27 +298,28 @@ COMERC DETAIL
 
 
 .points_euro{
-	width: 35%;
+	width: 42%;
 	height: auto;
 	position: absolute;
-	left: 10%;	
+	left: 7%;	
 	text-align: center;
 }
 
 .points_total{
-	width: 35%;
+	width: 42%;
 	height: auto;
 	position: absolute;
-	right: 10%;	
+	right: 7%;	
 	text-align: center;
 }
 
 .points_label{
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: bold;
 	color: #888;
 	margin-bottom: 3px;
 	text-shadow: 0 2px 1px rgba(255,255,255,1);
+
 }
 
 .points_num{
@@ -377,10 +384,28 @@ MANAGEMENT
 	background: url('../imgs/comun_icon_gasolia.png') no-repeat center center;
 	background-size: contain;
 	right: 10px;
-	top: 10px;
-	
+	top: 10px;	
 }
 
+#manage_box_icon_1{
+	background: url('../imgs/ropa.png')no-repeat center center;
+}
+
+#manage_box_icon_2{
+	background: url('../imgs/alquiler.png')no-repeat center center;
+}
+
+#manage_box_icon_3{
+	background: url('../imgs/gasolina.png')no-repeat center center;
+}
+
+#manage_box_icon_4{
+	background: url('../imgs/restaurantes.png')no-repeat center center;
+}
+
+#manage_box_icon_5{
+	background: url('../imgs/musica.png')no-repeat center center;
+}
 .margin_transparent{
 	width: 100px;
 	height: 30px;
@@ -394,16 +419,362 @@ MANAGEMENT
 
 
 /*******************************************************************
+MANAGE DETAIL
+*******************************************************************/
+#man_detail_view{
+	background: #E6E5E5;
+}
+
+.man_detail_header { 
+	width: 100%;
+	height: 145px;
+	position: relative;
+	background: #E6E5E5;
+	border-bottom: 2px solid #D9D8D8;
+	clear: both;
+} 
+
+.man_det_head_box { 
+	width: 84%;
+	height: 105px;
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	margin-left: -42%;
+	background-image: -webkit-linear-gradient(top, rgb(250,250,250), #dcdcdc);
+	box-shadow: 0px 0px 1px rgba(0,0,0,.1);
+	border: 1px solid #ccc;
+	border-radius: 2px;
+} 
+
+.man_det_box_icon { 
+	width: 65px;
+	height: 65px;
+	position: absolute;
+	background: transparent;
+	top: 20px;
+	left: 20px;
+	background: url('../imgs/comun_icon_gasolia.png') no-repeat center center;
+	background-size: contain;
+} 
+
+.man_det_box_title { 
+	width: 75%;
+	height: auto;
+	position: absolute;
+	right: 15px;
+	top: 20px;
+	color: #515252;
+	text-align: right;
+	font-size: 18px;
+	font-weight: bold;
+
+} 
+
+.man_det_box_subtitle { 
+	width:55%;
+	height: auto;
+	position: absolute;
+	right: 15px;
+	top: 41px;
+	color: #268FD9;
+	text-align: right;
+	font-size: 16px;
+	font-weight: bold;
+	color: #07659B;
+} 
+
+.man_det_box_num{ 
+	width: auto;
+	height: auto;
+	position: absolute;
+	right: 10px;
+	bottom: 14px;
+	font-size: 26px;
+	font-weight: bold;
+
+} 
+
+.man_detail_list{
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: block;
+	background: #E6E5E5;
+	
+	
+}
+
+.man_det_list_item{
+	width: 100%;
+	height: 85px;
+	position: relative;
+	background: transparent;
+	border-bottom: 2px solid #D9D8D8;
+	border-top: 1px solid rgba(255,255,255,.5);
+}
+
+.man_det_li_date { 
+	width: 100px;
+	height: auto;
+	position: absolute;
+	top: 10px;
+	left: 7%;
+	color: #767676;
+	font-size: 14px;
+	text-shadow: 0 1px 0px white;
+
+} 
+
+.man_det_li_name { 
+	width: 100px;
+	height: auto;
+	position: absolute;
+	bottom: 30px;
+	left: 7%;
+	color: #268FD9;
+	font-size: 22px;
+	font-weight: bold;
+	text-shadow: 0 1px 0px white;
+
+} 
+
+.man_det_li_num { 
+	width: 100px;
+	height: auto;
+	position: absolute;
+	bottom: 30px;
+	right: 7%;
+	color: black;
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: 0 1px 0px white;
+	text-align: right;
+
+} 
+
+.man_det_li_points { 
+	width: 100px;
+	height: auto;
+	position: absolute;
+	bottom: 10px;
+	right: 7%;
+	color: #767676;
+	font-size: 14px;
+	text-shadow: 0 1px 0px white;
+	text-align: right;
+
+} 
+
+/*******************************************************************
 PROFILE
 *******************************************************************/
+
+.profile_view{
+	background: #E6E5E5 ;
+}
+
+.profile_wrapper{
+	width: 90%;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	
+}
+.profile_cards{
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.pro_label{
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-bottom: 5px;
+	padding-left: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.pro_grouped_list{
+	width: 100%;
+	height: auto;
+	background: white;
+	border-radius: 3px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+	border: 1px solid #ccc;
+	margin-bottom: 25px;
+}
+
+.pro_list_item{
+	width: 94%;
+	height: 50px;
+	position: relative;
+	padding-left: 6%;
+	line-height: 50px;
+	border-bottom: 1px solid #ccc;
+	color: #999;
+	/*color: #268FD9;*/
+}
+
+
+.list_tick{
+	width: 35px;
+	height: 35px;
+	background: url('../imgs/tick.png') no-repeat center center;
+	background-size: contain;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	display: block; 
+}
+
+
+.pro_list_item:last-child{
+	border:none;
+}
+
+.pro_points{
+	width: 94%;
+	height: 50px;
+	position: relative;
+	padding-left: 6%;
+	line-height: 50px;
+	border-radius: 3px;
+	background: white;
+	box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+	border: 1px solid #ccc;
+	margin-bottom: 25px;
+	color: #999;
+}
+
+.pro_points_num, .pro_list_item_num{
+	width: auto;
+	height:auto ;
+	position: absolute;
+	right: 4%;
+	top: 0px;
+	color: black;
+	font-weight: bold;	
+}
+
+.pro_movement_item{
+	width: 94%;
+	height: 50px;
+	position: relative;
+	padding-left: 6%;
+	line-height: 50px;
+	border-bottom: 1px solid #ccc;
+	color: #268FD9;
+	font-weight: bold;
+}
+
 
 /*******************************************************************
 RANKING
 *******************************************************************/
 
+.ranking_wrapper{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.ranking_list_item{
+	width: 92%;
+	height: 50px;
+	position: relative;
+	border-bottom: 2px solid #D9D8D8;
+	border-top: 1px solid rgba(255,255,255,.5);
+	padding-left: 8%;
+}
 
 
 
+.ranking_name{
+	width: 60%;
+	height: auto;
+	position: relative;
+	line-height: 50px;
+	color: #777;
+}
+
+.ranking_points{
+	width: auto;
+	height: auto;
+	position: absolute;
+	line-height: 50px;
+	right: 5%;
+	top: 0;
+	color: #555;
+}
+
+
+#ranking_1, #ranking_2, #ranking_3{
+	width: 88%;
+	height: 50px;
+	position: relative;
+	border-bottom: 2px solid #D9D8D8;
+	border-top: 1px solid rgba(255,255,255,.5);
+	padding-left: 12%;
+	font-weight: bold;
+}
+
+#ranking_1{
+	background: #dadada;
+}
+
+#ranking_2{
+	background: #dcdcdc;
+}
+
+#ranking_3{
+	background: #dfdfdf;
+}
+#ranking_1 .ranking_name, #ranking_2 .ranking_name, #ranking_3 .ranking_name{
+	color: black;
+}
+
+.ranking_icon_1, .ranking_icon_2, .ranking_icon_3{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	background: transparent;
+	left: 5px;
+	top: 7px;
+}
+
+.ranking_icon_1{
+	background: url('../imgs/gold.png') no-repeat center center;
+	background-size: contain;
+}
+
+.ranking_icon_2{
+	background: url('../imgs/silver.png') no-repeat center center;
+	background-size: contain;
+}
+.ranking_icon_3{
+	background: url('../imgs/bronze.png') no-repeat center center;
+	background-size: contain;
+}
+
+
+#ranking_list_user .ranking_name, #ranking_list_user .ranking_points{
+	color: #268FD9;	
+}
+
+.ranking_user_icon{
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	background: transparent url('../imgs/rank_user_icon.png') no-repeat center center;
+	background-size: contain;
+	left: 4px;
+	top: 13px;
+}
 
 /*******************************************************************
 LOGIN

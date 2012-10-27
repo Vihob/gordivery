@@ -22,6 +22,7 @@
     <!-- Titles -->
     <string name="main_name">Gordivery App</string>
     <string name="login_title">Login</string>
+    <string name="detail">Detalle</string>
     
     <!-- Alerts -->
     <string name="loading">Cargando&#8230;</string>

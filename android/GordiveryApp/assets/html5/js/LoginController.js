@@ -66,9 +66,11 @@ var loginController = function (){
       
       //Username fileds      
       $("#login_form_username").attr("placeholder",L.get("_username"));
+      $("#login_form_username").val("gordivery");
 
       //Password fields
       $("#login_form_pass").attr("placeholder",L.get("_password"));
+      $("#login_form_pass").val("demo");
 
       //submit
       $("#login_form_submit").attr("value",L.get("_accept"));

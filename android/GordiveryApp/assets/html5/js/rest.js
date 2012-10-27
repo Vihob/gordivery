@@ -16,6 +16,12 @@ Dependencies:
 	var kDoLogin = kBaseAPIURL+"/access/login";
 	var kGetCommerces = "operations/commerce/search/near";
 	var kGetCommerceDetail = "operations/commerce/";
+	var kGetTransactionsList = "https://dl.dropbox.com/u/30237644/FinApps/categories_";
+
+	var kGetAccount = "operations/client/profile/@me";
+	var kGetCreditCard = "operations/card/";
+	
+	var kDoPayment = "operations/payment/"
 
 	var k_TimeOut = 10;
 	var k_LongTimeOut = 25;
@@ -35,8 +41,8 @@ Dependencies:
 		getComerces : function(lat,lon, success, error){
 
 			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
-			accesToken = "608-b0cc-ac39ede03a74";
-			var url = kBaseAPIURL + accesToken+"/"+kGetCommerces+"?lat="+lat+"&lng="+lon+"&radius=0.5";
+
+			var url = kBaseAPIURL + accessToken+"/"+kGetCommerces+"?lat="+lat+"&lng="+lon+"&radius=0.5";
 			var type = 'GET';
 			
 			// Your code here
@@ -54,8 +60,25 @@ Dependencies:
 		getComerceDetail : function(idComerce, success, error){
 
 			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
-			accesToken = "608-b0cc-ac39ede03a74";
-			var url = kBaseAPIURL + accesToken+"/"+kGetCommerceDetail+idComerce;
+			var url = kBaseAPIURL + accessToken+"/"+kGetCommerceDetail+idComerce;
+			var type = 'GET';
+			
+			// Your code here
+	        $.ajax({
+	            //this is a 'cross-origin' domain
+	            url : url,
+	            type : type,
+	            contentType: 'application-json',
+				dataType : 'json',
+	            success : success,
+	            error : error
+	        });
+
+		},
+
+		getTransactionsList: function(categoryId, success, error){
+
+			var url = kGetTransactionsList+categoryId+'.json';
 			var type = 'GET';
 			
 			// Your code here
@@ -88,6 +111,74 @@ Dependencies:
 	            error : error
         	});
 		},
+		
+		getUserAccount: function(success, error) {
+			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
+
+			var url = kBaseAPIURL + accessToken+"/"+kGetAccount;
+			var type = 'GET';
+			
+			// Your code here
+	        $.ajax({
+	            //this is a 'cross-origin' domain
+	            url : url,
+	            type : type,
+	            contentType: 'application-json',
+				dataType : 'json',
+	            success : success,
+	            error : error
+	        });
+		},
+		
+		getCreditCardItem: function(creditID, success, error) {
+			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
+
+			var url = kBaseAPIURL + accessToken+"/"+kGetCreditCard+creditID+"/status";
+			var type = 'GET';
+			
+			// Your code here
+	        $.ajax({
+	            //this is a 'cross-origin' domain
+	            url : url,
+	            type : type,
+	            contentType: 'application-json',
+				dataType : 'json',
+	            success : success,
+	            error : error
+	        });
+		},
+		
+		askPayment: function(comercId, success, error) {
+			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
+
+			var url = kBaseAPIURL + accessToken+"/"+kGetCreditCard+comercId+"/status";
+			var type = 'GET';
+			var data = '{"code":"80808-23123-182312","value": 150}'
+			data.code = "80808-23123-182312";
+			data.value = 140;
+	        success(data);
+
+		},
+		
+		doPayment: function(code,creditCardID, success, error) {
+			var url = kBaseAPIURL + accessToken+"/billing/"+code+"/exec";
+			var type = 'POST';
+			
+			var data = '{"idCard": "'+creditCardID+'"}'
+			// Your code here
+	        $.ajax({
+	            //this is a 'cross-origin' domain
+	            url : url,
+	            type : type,
+				data : data,
+	            contentType: 'application-json',
+				dataType : 'json',
+	            success : success,
+	            error : success //Application demo purpose
+	        });
+
+		},
+		
 		
 		/**
 		* Indicates whether rest consumer is in fake mode or not.
