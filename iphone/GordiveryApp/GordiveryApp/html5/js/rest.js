@@ -20,6 +20,9 @@ Dependencies:
 
 	var kGetAccount = "operations/client/profile/@me";
 	var kGetCreditCard = "operations/card/";
+	
+	var kDoPayment = "operations/payment/"
+	GET ../payment/{id_card}/code
 
 	var k_TimeOut = 10;
 	var k_LongTimeOut = 25;
@@ -68,9 +71,12 @@ Dependencies:
 	            type : type,
 	            contentType: 'application-json',
 				dataType : 'json',
-	            success : success,
+	            success : addIDToSuccess,
 	            error : error
 	        });
+			function addIDToSuccess {
+				success(success,error,idComerce);
+			}
 		},
 
 		getTransactionsList: function(categoryId, success, error){
@@ -144,6 +150,38 @@ Dependencies:
 	            error : error
 	        });
 		},
+		
+		askPayment: function(comercId, success, error) {
+			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
+
+			var url = kBaseAPIURL + accessToken+"/"+kGetCreditCard+creditID+"/status";
+			var type = 'GET';
+			var data = '{"code":"80808-23123-182312","value": 150}'
+			data.code = "80808-23123-182312";
+			data.value = 140;
+	        success(data);
+
+		},
+		
+		doPayment: function(code,creditCardID, success, error) {
+			var url = kBaseAPIURL + accessToken+"/billing/"+code+"/exec";
+			var type = 'POST';
+			
+			var data = '{"idCard": "'+creditCardID+'"}'
+			// Your code here
+	        $.ajax({
+	            //this is a 'cross-origin' domain
+	            url : url,
+	            type : type,
+				data : data,
+	            contentType: 'application-json',
+				dataType : 'json',
+	            success : success,
+	            error : success //Application demo purpose
+	        });
+
+		},
+		
 		
 		/**
 		* Indicates whether rest consumer is in fake mode or not.
