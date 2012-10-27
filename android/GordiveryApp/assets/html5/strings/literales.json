@@ -23,7 +23,11 @@
 
 		"_checkNetworkSettings" : "Revise los ajustes de red de su dispositivo.",
 
-		"_error" : "Error"
+		"_error" : "Error",
+
+		"_gastosAcumulados" : "Gastos Acumulados",
+
+		"_puntos" : "puntos"
 	},
 	"en" : {	
 		"_cancel" : "Cancel",

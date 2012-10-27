@@ -9,6 +9,7 @@ public class Defs {
 	public static final String profileUrl = "file:///android_asset/html5/html/ProfileView.html";
 	public static final String rankingUrl = "file:///android_asset/html5/html/RankingView.html";
 	public static final String LoginUrl = "file:///android_asset/html5/html/LoginView.html";
+	public static final String ComercUrl = "file:///android_asset/html5/html/ComercDetail.html";
 	
 	
 	//Javascript code on ShowingView
@@ -17,9 +18,11 @@ public class Defs {
 	public static final String profileJS = "profileController.viewWillAppear();";
 	public static final String rankingJS = "rankingController.viewWillAppear();";
 	public static final String loginJS = "loginController.viewWillAppear();";
+	public static final String comercDetailJS = "comercDetailController.viewWillAppear();";
 	
 	//Results
 	public static final int LoginActivity = 100;
+	public static final int ComercActivity = 101;
 	
 
 	//Activities request ids

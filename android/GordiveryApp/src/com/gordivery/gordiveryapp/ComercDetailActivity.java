@@ -9,24 +9,23 @@ import android.view.KeyEvent;
 import android.view.MenuItem;
 
 import com.example.android.actionbarcompat.ActionBarActivity;
-import com.gordivery.gordiveryapp.R;
 import com.gordivery.gordiveryapp.fragments.BaseWebFragment;
 import com.gordivery.gordiveryapp.utils.Defs;
 
-public class LoginActivity extends ActionBarActivity {
-	private LoginFragment mWebFragment;
+public class ComercDetailActivity extends ActionBarActivity {
+	private ComercDetailFragment mWebFragment;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		setTitle(R.string.login_title);
+		setTitle(R.string.detail);
 		
 		setContentView(R.layout.webactivity);
 		
 		setUpHomeInCase();
 		
-		mWebFragment = new LoginFragment();
+		mWebFragment = new ComercDetailFragment();
 		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 		ft.add(R.id.content_web, mWebFragment).commit();
 	}
@@ -78,18 +77,18 @@ public class LoginActivity extends ActionBarActivity {
     	return true;
     }
     
-    public static class LoginFragment extends BaseWebFragment{
+    public static class ComercDetailFragment extends BaseWebFragment{
     	
     	@Override
     	public void onCreate (Bundle savedInstanceState){
     		super.onCreate(savedInstanceState);
     		
-    		mWebView.loadUrl(Defs.LoginUrl);
+    		mWebView.loadUrl(Defs.ComercUrl);
     	}
     	
     	@Override
     	public void onViewVisible(){
-    		mWebView.loadUrl("javascript:"+Defs.loginJS);
+    		mWebView.loadUrl("javascript:"+Defs.comercJS);
     	}
     }
 }
