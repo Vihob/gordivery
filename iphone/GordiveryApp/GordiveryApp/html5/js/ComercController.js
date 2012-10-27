@@ -27,17 +27,12 @@ var comercController = function (){
 
     var viewWillAppear = function(){
 
-        //Check is user logged
-        var user_token = localStorage.getItem( k_USER_LOGIN_TOKEN );
-        if (! utils.isNotEmptyLocalStorageStringKey( user_token ) ) {
-            utils.showActivityView();
-            //Call rest method
-			restConsumer.getComerces(41.402391,2.194765,onListReceived,onListError);
-        } else {
-            //Show LoginView
-            window.location = "push:"+k_LOGINL_VIEW_PATH;
-        };
 
+       localStorage.setItem( k_USER_LOGIN_TOKEN, "608-b0cc-ac39ede03a74" );
+
+
+        utils.showActivityView();
+        restConsumer.getComerces(41.402391,2.194765,onListReceived,onListError);
     }
 
     //--------------------------------------------------------------
