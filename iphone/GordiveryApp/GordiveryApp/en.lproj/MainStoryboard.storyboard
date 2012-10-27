@@ -12,8 +12,9 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdx-fK-vg5">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bdx-fK-vg5">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
                                 <connections>
                                     <outlet property="delegate" destination="B57-fs-UUE" id="YsP-sB-XS0"/>
                                 </connections>
@@ -60,8 +61,9 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8A-7b-IJn">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v8A-7b-IJn">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
                                 <connections>
                                     <outlet property="delegate" destination="D7D-Te-uRp" id="zlS-VD-Fv1"/>
                                 </connections>
@@ -131,8 +133,9 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kp2-SK-OYG">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kp2-SK-OYG">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
                                 <connections>
                                     <outlet property="delegate" destination="gHO-Nc-1ge" id="Oco-mi-0sV"/>
                                 </connections>
@@ -179,8 +182,9 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKb-Wf-dWr">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKb-Wf-dWr">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
                                 <connections>
                                     <outlet property="delegate" destination="eKE-Ar-wXW" id="EBY-ah-tVU"/>
                                 </connections>
@@ -211,8 +215,9 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9P-Us-GsN">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N9P-Us-GsN">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
                                 <connections>
                                     <outlet property="delegate" destination="AOt-O0-Grq" id="Hce-Wh-8M7"/>
                                 </connections>
@@ -282,8 +287,8 @@
                     <connections>
                         <segue destination="Vyp-UP-K96" kind="relationship" relationship="viewControllers" id="yu4-a6-7xB"/>
                         <segue destination="y0s-Bx-zVc" kind="relationship" relationship="viewControllers" id="sWe-ch-qOj"/>
-                        <segue destination="vFQ-0r-fc8" kind="relationship" relationship="viewControllers" id="Mwf-ud-qkd"/>
                         <segue destination="RVL-ur-wwG" kind="relationship" relationship="viewControllers" id="8r8-fi-w3f"/>
+                        <segue destination="vFQ-0r-fc8" kind="relationship" relationship="viewControllers" id="Mwf-ud-qkd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LIs-H5-dKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -437,6 +442,68 @@
             <point key="canvasLocation" x="169" y="-926"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="CategoryListViewController" superclassName="WebViewBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CategoryListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="ComercDetailViewController" superclassName="WebViewBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ComercDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="ComercListViewController" superclassName="WebViewBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ComercListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="ComercMapViewController" superclassName="WebViewBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ComercMapViewController.h"/>
+        </class>
+        <class className="CreditCardSelectorViewController" superclassName="WebViewBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreditCardSelectorViewController.h"/>
+        </class>
+        <class className="LoginViewController" superclassName="WebViewBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ProfileViewController" superclassName="WebViewBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="RankingViewController" superclassName="WebViewBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RankingViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="TransactionCompleteViewController" superclassName="WebViewBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionCompleteViewController.h"/>
+        </class>
+        <class className="TransactionListViewController" superclassName="WebViewBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="TransactionViewController" superclassName="WebViewBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionViewController.h"/>
+        </class>
+        <class className="WebViewBaseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewBaseViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
@@ -444,6 +511,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="kgp-Lc-SzE"/>
-        <segue reference="z2O-DO-Rep"/>
+        <segue reference="NAD-tZ-JOk"/>
     </inferredMetricsTieBreakers>
 </document>
