@@ -16,6 +16,7 @@ Dependencies:
 	var kDoLogin = kBaseAPIURL+"/access/login";
 	var kGetCommerces = "operations/commerce/search/near";
 	var kGetCommerceDetail = "operations/commerce/";
+	var kGetTransactionsList = "";
 
 	var k_TimeOut = 10;
 	var k_LongTimeOut = 25;
@@ -56,6 +57,23 @@ Dependencies:
 			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
 			accesToken = "608-b0cc-ac39ede03a74";
 			var url = kBaseAPIURL + accesToken+"/"+kGetCommerceDetail+idComerce;
+			var type = 'GET';
+			
+			// Your code here
+	        $.ajax({
+	            //this is a 'cross-origin' domain
+	            url : url,
+	            type : type,
+	            contentType: 'application-json',
+				dataType : 'json',
+	            success : success,
+	            error : error
+	        });
+		},
+
+		getTransactionsList: function(categoryId, success, error){
+
+			var url = kGetTransactionsList+categoryId;
 			var type = 'GET';
 			
 			// Your code here
