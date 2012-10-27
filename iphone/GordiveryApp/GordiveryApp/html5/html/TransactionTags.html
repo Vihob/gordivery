@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GordiveryApp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href="../css/common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="../js/Defines.js"></script>
+<script type="text/javascript" src="../js/utils.js"></script>
+<script type="text/javascript" src="../js/literals.js"></script>
+<script type="text/javascript" src="../js/rest.js"></script>
+<script type="text/javascript" src="../js/jquery.base64.js"></script>
+<script type="text/javascript" src="../js/TransactionController.js"></script>
+
+
+
+<script type="text/javascript">
+	
+	//Add platform CSS (iphone/android)
+	var userAgent = navigator.userAgent;
+	if (userAgent.match(/Android/)) {
+		$('head').append('<link rel="stylesheet" href="../css/android.css" type="text/css" />');
+	}
+	else if (userAgent.match(/(iPhone|iPod|iPad)/)) {
+		$('head').append('<link rel="stylesheet" href="../css/iphone.css" type="text/css" />');
+	}
+
+	$(document).ready(function(){
+		transactionController.viewLoaded();    
+	});
+
+</script>
+</head>
+
+<body>
+<div class="mb_page" id="tags_view">
+	<div class="tags_wrapper">
+		<ul class="tags_list">
+			<li class="tags_list_item" id="gasolina_tag"><div class="tag_icon" id="gas"></div>Gasolina <div class="list_tick"></div></li>
+			<li class="tags_list_item"><div class="tag_icon" id="rop"></div>Ropa</li>
+			<li class="tags_list_item"><div class="tag_icon" id="mus"></div>Música</li>
+			<li class="tags_list_item"><div class="tag_icon" id="res"></div>Restaurantes</li>
+			<li class="tags_list_item"><div class="tag_icon" id="alq"></div>Hogar</li>	
+		</ul>
+	<div class="tags_add">Añadir nuevo grupo <div class="more_icon"></div></div>
+	
+	<div class="tags_save_btn">Guardar</div>
+	
+	</div>
+</div>
+</body>
+
+</html>
