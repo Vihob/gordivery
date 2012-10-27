@@ -3,9 +3,9 @@
   - jquery-1.8.2.js
   - literals.js
 */
-var comercDetailController = function (){
+var comercController = function (){
 	
-	var comercInfo;
+	var comercList = [];
 
     var viewLoaded = function(){
 
@@ -19,7 +19,7 @@ var comercDetailController = function (){
       loadStoredData();
 
         //Initialize mainController
-        comercDetailController.viewWillAppear();
+        comercController.viewWillAppear();
 
       },
       function(){
@@ -31,7 +31,6 @@ var comercDetailController = function (){
     var viewWillAppear = function(){
 
 		loadDetail();
-		loadMap();
     }
 
     function loadStoredData(){
@@ -46,6 +45,7 @@ var comercDetailController = function (){
 	}
 	
 	function loadDetail() {
+
 		if (comercInfo.data.address != null) {
 			$("#detail_location_adress").html(comercInfo.data.address.street +","+ comercInfo.data.address.number);
 		}
@@ -58,6 +58,7 @@ var comercDetailController = function (){
       var mapUrl = 'http://maps.googleapis.com/maps/api/staticmap?center='+latitude+','+longitude+'&zoom=15&size=600x600&maptype=roadmap&markers=color:blue%7Clabel:%7C'+latitude+','+longitude+'&sensor=true';
 
 	$('#detail_location_map').attr('style', 'background:url('+mapUrl+') center center no-repeat');
+
 	}
 
 
