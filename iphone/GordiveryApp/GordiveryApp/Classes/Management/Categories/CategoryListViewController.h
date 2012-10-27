@@ -12,5 +12,6 @@
 @interface CategoryListViewController : WebViewBaseViewController<UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webview;
+@property (nonatomic, strong) NSString *urlString;
 
 @end

@@ -61,7 +61,7 @@
 }
 
 - (void)callViewWillAppearOnHTML {
-    [self.webview stringByEvaluatingJavaScriptFromString:@"ComercController.viewWillAppear();"];
+    [self.webview stringByEvaluatingJavaScriptFromString:@"comercController.viewWillAppear();"];
 }
 
 - (void)didReceiveMemoryWarning

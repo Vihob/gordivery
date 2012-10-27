@@ -11,4 +11,7 @@
 
 @interface TransactionListViewController : WebViewBaseViewController
 
+@property (strong, nonatomic)          NSString  *localUrl;
+@property (strong, nonatomic) IBOutlet UIWebView *webview;
+
 @end

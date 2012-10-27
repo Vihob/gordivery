@@ -20,6 +20,7 @@
 
 //Segues Identifiers
 #define k_LoginModal @"LoginModal"
+#define k_pushTransactionsListViewPush @"pushTransactionsListView"
 
 
 

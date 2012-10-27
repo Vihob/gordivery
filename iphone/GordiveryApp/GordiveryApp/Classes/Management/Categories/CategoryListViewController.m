@@ -7,6 +7,8 @@
 //
 
 #import "CategoryListViewController.h"
+#import "Defines.h"
+#import "TransactionListViewController.h"
 
 @interface CategoryListViewController ()
 
@@ -63,5 +65,33 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Private Methods
+
+- (void)openTransactionsListViewControllerWithUrlString:(NSString *)url {
+    
+    self.urlString = url;
+    [self performSegueWithIdentifier:k_pushTransactionsListViewPush sender:self];
+    
+}
+
+#pragma mark - Segues
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {    
+    
+    if ([[segue identifier] isEqualToString:k_pushTransactionsListViewPush]) {
+        TransactionListViewController *transactionListViewController = (TransactionListViewController *) [segue destinationViewController];
+        [transactionListViewController setLocalUrl:self.urlString];
+    }
+    
+    
+}
+
+#pragma mark - Overriden methods
+
+- (void)pushURLOnViewController:(NSString*)urlToLoad{
+    [self openTransactionsListViewControllerWithUrlString:urlToLoad]; 
+}
+
 
 @end
