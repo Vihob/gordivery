@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../js/literals.js"></script>
 <script type="text/javascript" src="../js/rest.js"></script>
 <script type="text/javascript" src="../js/jquery.base64.js"></script>
-<script type="text/javascript" src="../js/TransactionController.js"></script>
+<script type="text/javascript" src="../js/TransactionTagsController.js"></script>
 
 
 
@@ -27,7 +27,7 @@
 	}
 
 	$(document).ready(function(){
-		transactionController.viewLoaded();    
+		transactionsTagsController.viewLoaded();
 	});
 
 </script>
@@ -35,6 +35,7 @@
 
 <body>
 <div class="mb_page" id="tags_view">
+	<div class="pro_label" id="table_text">Selecciona una categoría para guardar la transacción</div>
 	<div class="tags_wrapper">
 		<ul class="tags_list">
 			<li class="tags_list_item" id="gasolina_tag"><div class="tag_icon" id="gas"></div>Gasolina <div class="list_tick"></div></li>
@@ -45,7 +46,7 @@
 		</ul>
 	<div class="tags_add">Añadir nuevo grupo <div class="more_icon"></div></div>
 	
-	<div class="tags_save_btn">Guardar</div>
+	<div class="tags_save_btn" id="tags_save_btn">Guardar</div>
 	
 	</div>
 </div>

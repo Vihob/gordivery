@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hL6-so-YfX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11G56" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hL6-so-YfX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
         <!--Comerc Detail View Controller-->
@@ -45,9 +45,26 @@
                     <view key="view" contentMode="scaleToFill" id="jga-3c-vzc">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdb-vj-0qa">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="VWv-aK-pV7" id="Hpa-jd-Ejo"/>
+                                </connections>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mdb-vj-0qa" firstAttribute="bottom" secondItem="jga-3c-vzc" secondAttribute="bottom" type="default" id="2WD-vh-OOm"/>
+                            <constraint firstItem="mdb-vj-0qa" firstAttribute="leading" secondItem="jga-3c-vzc" secondAttribute="leading" type="default" id="JPl-yt-Pst"/>
+                            <constraint firstItem="mdb-vj-0qa" firstAttribute="top" secondItem="jga-3c-vzc" secondAttribute="top" type="default" id="YVo-sw-EsK"/>
+                            <constraint firstItem="mdb-vj-0qa" firstAttribute="trailing" secondItem="jga-3c-vzc" secondAttribute="trailing" type="default" id="lpk-he-FxN"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lig-If-qqc"/>
+                    <connections>
+                        <outlet property="webview" destination="mdb-vj-0qa" id="D2X-wJ-1xr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwK-v6-nB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,7 +151,7 @@
                     <navigationItem key="navigationItem" id="8Sr-mz-6Yc"/>
                     <connections>
                         <outlet property="webview" destination="HVK-KI-vOy" id="6Hw-vs-k9Q"/>
-                        <segue destination="VWv-aK-pV7" kind="push" id="Y6H-Ap-DSi"/>
+                        <segue destination="VWv-aK-pV7" kind="push" identifier="TransactionComplete" id="Y6H-Ap-DSi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgV-a2-n3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -506,6 +523,9 @@
         </class>
         <class className="TransactionCompleteViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionCompleteViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
         </class>
         <class className="TransactionListViewController" superclassName="WebViewBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionListViewController.h"/>

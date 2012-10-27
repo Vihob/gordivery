@@ -7,6 +7,7 @@
 //
 
 #import "TransactionViewController.h"
+#import "TransactionCompleteViewController.h"
 
 @interface TransactionViewController ()
 
@@ -34,6 +35,11 @@
     [self configureView];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self callViewWillAppearOnHTML];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -59,10 +65,33 @@
     [self.webview stringByEvaluatingJavaScriptFromString:@"transactionsListController.viewWillAppear();"];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    
+    if ([[segue identifier] isEqualToString:@"TransactionComplete"]) {
+        TransactionCompleteViewController *transactionCompleteVC = (TransactionCompleteViewController *) [segue destinationViewController];
+        transactionCompleteVC.hidesBottomBarWhenPushed = YES;
+    }
+
+    
+    
+}
+
 #pragma mark - Overriden methods
 
 - (void)closeModal {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)pushURLOnViewController:(NSString*)urlToLoad{
+
+    [self performSegueWithIdentifier:@"TransactionComplete" sender:self];
+
+    
+    
+    
+    
+    
 }
 
 @end
