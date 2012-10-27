@@ -707,7 +707,7 @@ RANKING
 	width: 35px;
 	height: 35px;
 	position: absolute;
-	background: red;
+	background: transparent;
 	left: 5px;
 	top: 7px;
 }
@@ -729,6 +729,16 @@ RANKING
 
 #ranking_list_user .ranking_name, #ranking_list_user .ranking_points{
 	color: #268FD9;	
+}
+
+.ranking_user_icon{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	background: transparent url('../imgs/rank_user_icon.png') no-repeat center center;
+	background-size: contain;
+	left: 5px;
+	top: 10px;
 }
 
 /*******************************************************************
