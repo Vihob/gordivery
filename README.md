@@ -24,8 +24,13 @@
 	realitzar. 
 	
 	Per una part incloure medalles per cert tipus de compres o activitats, del estil de Foursquare. A més com els punts només són una referencia,
-	es poden donar en més situacions per augmentar la part de la competició. Dintre del ranking es podría també fer el rànking per negocis.
+	es poden donar en més situacions per augmentar la part de la competició. Dintre del ranking es podria també fer el rànking per negocis. A més 
+	poder compartir els punts i les medalles a les xarxes socials dóna un punt extra de difusió i no seria gaire costós.
 	
 	En quant la part del llistat, podria ser interesant incloure els punts en un mapa, ja que es tracten dels punts propers.
 	
-	A la part del perfil existeix molta informació que es podría incloure a mode 
+	A la part del perfil existeix molta informació que es podría incloure a mode informatiu al usuari. 
+
+	Per últim s'havia plantejat realitzat un portal per a comerços on poder veure estadístiques utilitzant les dades de transaccions i la dels 
+	punts dels usuarios. La idea era mostrar gráfiques i taules de les compres organitzades per temps.
+
