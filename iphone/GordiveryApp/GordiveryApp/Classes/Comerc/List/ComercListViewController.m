@@ -29,6 +29,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    //Set navigationItem title
+    [self.navigationItem setTitle:NSLocalizedString(@"Comercios", @"")];
+    
     [self configureView];
 }
 
