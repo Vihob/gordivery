@@ -34,6 +34,12 @@ Dependencies:
 	//*******************************************************/
 	//	PRIVATE FUNCTIONS
 	//*******************************************************/
+	
+	function sleep(miliseconds) {
+		var dt = new Date();
+		dt.setTime(dt.getTime() + miliseconds);
+		while (new Date().getTime() < dt.getTime());
+	}
 
 	//CLASSES
 	var restConsumer = {
@@ -152,7 +158,7 @@ Dependencies:
 		
 		askPayment: function(comercId, success, error) {
 			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
-			window.setTimeout(partB,5000);//Simulate service
+			sleep(2000);
 			var url = kBaseAPIURL + accessToken+"/"+kGetCreditCard+comercId+"/status";
 			var type = 'GET';
 			var data = '{"code":"80808-23123-182312","value": 150}'
@@ -163,6 +169,7 @@ Dependencies:
 		},
 		
 		doPayment: function(code,creditCardID, success, error) {
+			var accessToken = localStorage.getItem( k_USER_LOGIN_TOKEN );
 			var url = kBaseAPIURL + accessToken+"/billing/"+code+"/exec";
 			var type = 'POST';
 			

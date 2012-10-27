@@ -18,6 +18,7 @@
 #define kActionHideLoading @"hideloading:"
 #define kActionDatePicker @"datepick:"
 #define kActionWeb  @"web:"
+#define kCloseModal  @"closemodal:"
 #define kActionParametersSeparator @"|"
 
 #define kSystemPlatformConstant @"systemPlatformConstant"
@@ -123,6 +124,8 @@
         res = ActionDatePicker;
     }else if([actionStr rangeOfString:kActionWeb].length > 0){
         res = ActionWeb;
+    }else if([actionStr rangeOfString:kCloseModal].location != NSNotFound) {
+        res = ActionCloseModal;
     }
     return res;
 }

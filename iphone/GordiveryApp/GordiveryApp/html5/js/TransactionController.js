@@ -46,9 +46,10 @@ var transactionController = function (){
 
     function setupView () {
       //Setup initial view and buttons
-	var payInfo = $("#pay_info")
-		payInfo.attr('style', 'display:hidden');
-		$("#pay_btns").attr('style', 'display:hidden');
+	    $("#pay_cancel").click( function(){ onCancelClick() } );
+	    $("#pay_accept").click( function(){ onAcceptPaymentClick() } );
+		$("#pay_info").attr('style', 'display:none');
+		$("#pay_btns").attr('style', 'display:none');
     }
 
     function onCancelClick() {
@@ -71,7 +72,7 @@ var transactionController = function (){
         if (data) {          
 			$("#pay_info").attr('style', 'display:block');
 			$("#pay_btns").attr('style', 'display:block');
-			$("#pay_loader").attr('style', 'display:hidden');
+			$("#pay_loader").attr('style', 'display:none');
            //Save paymentCode
            paymentCode = data.code;
         } 
