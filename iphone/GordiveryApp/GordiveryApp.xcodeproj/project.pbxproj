@@ -388,10 +388,10 @@
 		E601845F163AE94C00B2869C /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
-				E6018468163AE99800B2869C /* TransactionCompleteViewController.h */,
-				E6018469163AE99800B2869C /* TransactionCompleteViewController.m */,
 				E6018471163AEA0700B2869C /* TransactionViewController.h */,
 				E6018472163AEA0700B2869C /* TransactionViewController.m */,
+				E6018468163AE99800B2869C /* TransactionCompleteViewController.h */,
+				E6018469163AE99800B2869C /* TransactionCompleteViewController.m */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";

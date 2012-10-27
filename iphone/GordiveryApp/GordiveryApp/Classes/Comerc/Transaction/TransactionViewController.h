@@ -11,4 +11,6 @@
 
 @interface TransactionViewController : WebViewBaseViewController
 
+@property (strong, nonatomic) IBOutlet UIWebView *webview;
+
 @end
