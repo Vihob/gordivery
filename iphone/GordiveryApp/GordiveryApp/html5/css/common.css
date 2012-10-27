@@ -863,7 +863,7 @@ PAYMENTS
 	height: 220px;
 	position: absolute;
 	background: white;
-	display: block;
+	display: hidden;
 	left: 50%;
 	margin-left: -38%;
 	top: 50px;
