@@ -31,7 +31,7 @@
                     <navigationItem key="navigationItem" id="sqI-BI-cZd"/>
                     <connections>
                         <outlet property="webview" destination="bdx-fK-vg5" id="xhm-9c-1Mj"/>
-                        <segue destination="qn9-zp-sZ4" kind="modal" id="Upc-gL-LWT"/>
+                        <segue destination="qn9-zp-sZ4" kind="modal" identifier="TransactionViewModal" id="Upc-gL-LWT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syM-9J-CKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -442,68 +442,6 @@
             <point key="canvasLocation" x="169" y="-926"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CategoryListViewController" superclassName="WebViewBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CategoryListViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="ComercDetailViewController" superclassName="WebViewBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ComercDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="ComercListViewController" superclassName="WebViewBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ComercListViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="ComercMapViewController" superclassName="WebViewBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ComercMapViewController.h"/>
-        </class>
-        <class className="CreditCardSelectorViewController" superclassName="WebViewBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreditCardSelectorViewController.h"/>
-        </class>
-        <class className="LoginViewController" superclassName="WebViewBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ProfileViewController" superclassName="WebViewBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="RankingViewController" superclassName="WebViewBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RankingViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="TransactionCompleteViewController" superclassName="WebViewBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionCompleteViewController.h"/>
-        </class>
-        <class className="TransactionListViewController" superclassName="WebViewBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionListViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="TransactionViewController" superclassName="WebViewBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TransactionViewController.h"/>
-        </class>
-        <class className="WebViewBaseViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewBaseViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

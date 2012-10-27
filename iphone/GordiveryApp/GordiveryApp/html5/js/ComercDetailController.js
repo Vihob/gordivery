@@ -41,8 +41,8 @@ var comercDetailController = function (){
 
 	
 	function onBuyClick( cellInfo) {
-
-		window.location("push:"+"ComercDetail");
+    localStorage.setItem( k_COMERC_IDENT , cellInfo.comercInfo.commercID );
+		window.location("push:"+"TransactionView");
 	}
 	
 	function loadDetail() {
