@@ -11,3 +11,6 @@ var k_LOGINL_VIEW_PATH = "LoginView";
 
 //Comerc
 var K_COMERC_DETAIL_OBJECT = "K_COMERC_DETAIL_OBJECT"
+
+//Categories
+var k_CATEGORY_IDENT = "k_CATEGORY_IDENT";
