@@ -70,12 +70,10 @@ Dependencies:
 	            type : type,
 	            contentType: 'application-json',
 				dataType : 'json',
-	            success : addIDToSuccess,
+	            success : success,
 	            error : error
 	        });
-			function addIDToSuccess() {
-				success(success,error,idComerce);
-			}
+
 		},
 
 		getTransactionsList: function(categoryId, success, error){
