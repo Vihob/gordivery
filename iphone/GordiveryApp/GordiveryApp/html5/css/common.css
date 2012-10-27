@@ -448,13 +448,13 @@ MANAGE DETAIL
 } 
 
 .man_det_box_icon { 
-	width: 65px;
-	height: 65px;
+	width: 55px;
+	height: 55px;
 	position: absolute;
 	background: transparent;
-	top: 20px;
-	left: 20px;
-	background: url('../imgs/comun_icon_gasolia.png') no-repeat center center;
+	top: 25px;
+	left: 10px;
+	background: url('../imgs/generico.png') no-repeat center center;
 	background-size: contain;
 } 
 
@@ -527,7 +527,7 @@ MANAGE DETAIL
 } 
 
 .man_det_li_name { 
-	width: 100px;
+	width: 200px;
 	height: auto;
 	position: absolute;
 	bottom: 30px;
