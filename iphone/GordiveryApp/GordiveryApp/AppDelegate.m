@@ -39,14 +39,14 @@
        withFinishedUnselectedImage:[[UIImage imageNamed:@"tabbar_icon_cuentas.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 0, 10, 0)]];
     
     UITabBarItem *tab3 = [[tabController.viewControllers objectAtIndex:2] tabBarItem];
-    [tab3 setTitle:NSLocalizedString(@"Usuario", @"")];
-    [tab3 setFinishedSelectedImage:[[UIImage imageNamed:@"tabbar_icon_user_.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 0, 10, 0)]
-       withFinishedUnselectedImage:[[UIImage imageNamed:@"tabbar_icon_user.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 0, 10, 0)]];
+    [tab3 setTitle:NSLocalizedString(@"Ranking", @"")];
+    [tab3 setFinishedSelectedImage:[[UIImage imageNamed:@"tabbar_icon_ranking_.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 0, 10, 0)]
+       withFinishedUnselectedImage:[[UIImage imageNamed:@"tabbar_icon_ranking.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 0, 10, 0)]];
     
     UITabBarItem *tab4 = [[tabController.viewControllers objectAtIndex:3] tabBarItem];
-    [tab4 setTitle:NSLocalizedString(@"Ranking", @"")];
-    [tab4 setFinishedSelectedImage:[[UIImage imageNamed:@"tabbar_icon_ranking_.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 0, 10, 0)]
-       withFinishedUnselectedImage:[[UIImage imageNamed:@"tabbar_icon_ranking.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 0, 10, 0)]];
+    [tab4 setTitle:NSLocalizedString(@"Usuario", @"")];
+    [tab4 setFinishedSelectedImage:[[UIImage imageNamed:@"tabbar_icon_user_.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 0, 10, 0)]
+       withFinishedUnselectedImage:[[UIImage imageNamed:@"tabbar_icon_user.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 0, 10, 0)]];
     
     return YES;
 }

@@ -303,8 +303,8 @@
                     <connections>
                         <segue destination="Vyp-UP-K96" kind="relationship" relationship="viewControllers" id="yu4-a6-7xB"/>
                         <segue destination="y0s-Bx-zVc" kind="relationship" relationship="viewControllers" id="sWe-ch-qOj"/>
-                        <segue destination="RVL-ur-wwG" kind="relationship" relationship="viewControllers" id="8r8-fi-w3f"/>
                         <segue destination="vFQ-0r-fc8" kind="relationship" relationship="viewControllers" id="Mwf-ud-qkd"/>
+                        <segue destination="RVL-ur-wwG" kind="relationship" relationship="viewControllers" id="8r8-fi-w3f"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LIs-H5-dKl" userLabel="First Responder" sceneMemberID="firstResponder"/>

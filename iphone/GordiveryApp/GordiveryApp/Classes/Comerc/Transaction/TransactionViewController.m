@@ -59,4 +59,10 @@
     [self.webview stringByEvaluatingJavaScriptFromString:@"transactionsListController.viewWillAppear();"];
 }
 
+#pragma mark - Overriden methods
+
+- (void)closeModal {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end
