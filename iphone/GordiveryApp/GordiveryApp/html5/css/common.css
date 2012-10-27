@@ -101,7 +101,7 @@ COMERC
 	border-top: 1px solid rgb(250,250,255);
 }
 .near_list_element:nth-child(odd){
-	background: rgb(245,245,255);
+	background: rgb(245,245,245);
 }
 
 .near_list_element:nth-child(even){
@@ -139,23 +139,23 @@ COMERC
 } 
 
 .near_li_description { 
-	width: 65%;
-	height: auto;
+	width: 60%;
+	height: 17px;
 	position: absolute;
 	left: 85px;
 	top: 43px;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: normal;
 
 } 
 
 .near_li_distance { 
-	width: 12%;
+	width: 17%;
 	height: auto;
 	position: absolute;
-	right: 10px;
+	right: 12px;
 	top: 43px;
 	text-align: right;
 	font-size: 14px;
@@ -296,27 +296,28 @@ COMERC DETAIL
 
 
 .points_euro{
-	width: 35%;
+	width: 42%;
 	height: auto;
 	position: absolute;
-	left: 10%;	
+	left: 7%;	
 	text-align: center;
 }
 
 .points_total{
-	width: 35%;
+	width: 42%;
 	height: auto;
 	position: absolute;
-	right: 10%;	
+	right: 7%;	
 	text-align: center;
 }
 
 .points_label{
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: bold;
 	color: #888;
 	margin-bottom: 3px;
 	text-shadow: 0 2px 1px rgba(255,255,255,1);
+
 }
 
 .points_num{
