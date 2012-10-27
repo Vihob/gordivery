@@ -41,7 +41,11 @@ var comercController = function (){
 	
 	  var cell = $("<li class=near_list_element> </li>");
 	  var img = $("<div class=\"near_li_img\" id=\"near_li_img\"><img src=\"../imgs/starbucks_cafe.png\"></div>");
-      var comercName = $("<div class=\"near_li_name\">" + cellInfo.data.publicName + "</div>"); 
+ 	  var comercName = "";
+	  if ( cellInfo.data.publicName != null ) {
+		var comercName = $("<div class=\"near_li_name\">" + cellInfo.data.publicName + "</div>"); 
+	  }
+      
 	  var address = "";
       if ( cellInfo.data.address != null ) {
 		var address = cellInfo.data.address.street +","+ cellInfo.data.address.number;
