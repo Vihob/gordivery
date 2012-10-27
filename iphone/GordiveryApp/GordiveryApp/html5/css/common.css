@@ -642,9 +642,87 @@ PROFILE
 RANKING
 *******************************************************************/
 
+.ranking_wrapper{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.ranking_list_item{
+	width: 92%;
+	height: 50px;
+	position: relative;
+	border-bottom: 2px solid #D9D8D8;
+	border-top: 1px solid rgba(255,255,255,.5);
+	padding-left: 8%;
+}
+
+.ranking_name{
+	width: 60%;
+	height: auto;
+	position: relative;
+	line-height: 50px;
+	color: #777;
+}
+
+.ranking_points{
+	width: auto;
+	height: auto;
+	position: absolute;
+	line-height: 50px;
+	right: 5%;
+	top: 0;
+	color: #555;
+}
 
 
+#ranking_1, #ranking_2, #ranking_3{
+	width: 88%;
+	height: 50px;
+	position: relative;
+	border-bottom: 2px solid #D9D8D8;
+	border-top: 1px solid rgba(255,255,255,.5);
+	padding-left: 12%;
+	font-weight: bold;
+}
 
+#ranking_1{
+	background: #dadada;
+}
+
+#ranking_2{
+	background: #dcdcdc;
+}
+
+#ranking_3{
+	background: #dfdfdf;
+}
+#ranking_1 .ranking_name, #ranking_2 .ranking_name, #ranking_3 .ranking_name{
+	color: black;
+}
+
+.ranking_icon_1, .ranking_icon_2, .ranking_icon_3{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	background: red;
+	left: 5px;
+	top: 7px;
+}
+
+.ranking_icon_1{
+	background: url('../imgs/gold.png') no-repeat center center;
+	background-size: contain;
+}
+
+.ranking_icon_2{
+	background: url('../imgs/silver.png') no-repeat center center;
+	background-size: contain;
+}
+.ranking_icon_3{
+	background: url('../imgs/bronze.png') no-repeat center center;
+	background-size: contain;
+}
 
 /*******************************************************************
 LOGIN
