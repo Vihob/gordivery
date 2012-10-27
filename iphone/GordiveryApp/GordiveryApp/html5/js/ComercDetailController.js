@@ -5,7 +5,7 @@
 */
 var comercDetailController = function (){
 	
-	var comercInfo;
+	var comercInfo = "";
 
     var viewLoaded = function(){
 
@@ -33,12 +33,6 @@ var comercDetailController = function (){
 		loadDetail();
 		loadMap();
     }
-
-    function loadStoredData(){
-      //Get disclaimerInfo from localStorage
-      comercInfo =  utils.retriveJSONParseWithLocalStorageKey( K_COMERC_DETAIL_OBJECT );
-    }
-
 	
 	function loadDetail() {
 
@@ -65,6 +59,11 @@ var comercDetailController = function (){
     localStorage.setItem( k_COMERC_IDENT , comercInfo.commercID );
     window.location = "push:"+"TransactionView";
   }
+    
+    function loadStoredData(){
+        //Get disclaimerInfo from localStorage
+        comercInfo =  utils.retriveJSONParseWithLocalStorageKey( K_COMERC_DETAIL_OBJECT );
+    }
 
 
     //Functions or variables returned here will be public (accessing like comercController.viewLoaded())

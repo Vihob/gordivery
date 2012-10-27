@@ -60,6 +60,8 @@
 		8558D0F3163B662600547816 /* tabbar_icon_user_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8558D0BE163B662600547816 /* tabbar_icon_user_@2x.png */; };
 		8558D0F4163B662600547816 /* tabbar_icon_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 8558D0BF163B662600547816 /* tabbar_icon_user.png */; };
 		8558D0F5163B662600547816 /* tabbar_icon_user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8558D0C0163B662600547816 /* tabbar_icon_user@2x.png */; };
+		8558D111163BE70100547816 /* comun_timer.png in Resources */ = {isa = PBXBuildFile; fileRef = 8558D10F163BE70100547816 /* comun_timer.png */; };
+		8558D112163BE70100547816 /* comun_timer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8558D110163BE70100547816 /* comun_timer@2x.png */; };
 		E6018424163AE0F400B2869C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6018423163AE0F400B2869C /* UIKit.framework */; };
 		E6018426163AE0F400B2869C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6018425163AE0F400B2869C /* Foundation.framework */; };
 		E6018428163AE0F400B2869C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6018427163AE0F400B2869C /* CoreGraphics.framework */; };
@@ -147,6 +149,8 @@
 		8558D0BE163B662600547816 /* tabbar_icon_user_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_icon_user_@2x.png"; sourceTree = "<group>"; };
 		8558D0BF163B662600547816 /* tabbar_icon_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_icon_user.png; sourceTree = "<group>"; };
 		8558D0C0163B662600547816 /* tabbar_icon_user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_icon_user@2x.png"; sourceTree = "<group>"; };
+		8558D10F163BE70100547816 /* comun_timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comun_timer.png; sourceTree = "<group>"; };
+		8558D110163BE70100547816 /* comun_timer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comun_timer@2x.png"; sourceTree = "<group>"; };
 		E601841F163AE0F400B2869C /* GordiveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GordiveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6018423163AE0F400B2869C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E6018425163AE0F400B2869C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -229,6 +233,8 @@
 		8558D08A163B661A00547816 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8558D10F163BE70100547816 /* comun_timer.png */,
+				8558D110163BE70100547816 /* comun_timer@2x.png */,
 				E6464460163BB91B0028B4DE /* icon.png */,
 				E6464461163BB91B0028B4DE /* icon@2x.png */,
 				E646445B163BB9150028B4DE /* Default.png */,
@@ -589,6 +595,8 @@
 				E646445E163BB9150028B4DE /* Default@2x.png in Resources */,
 				E6464462163BB91B0028B4DE /* icon.png in Resources */,
 				E6464463163BB91B0028B4DE /* icon@2x.png in Resources */,
+				8558D111163BE70100547816 /* comun_timer.png in Resources */,
+				8558D112163BE70100547816 /* comun_timer@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
